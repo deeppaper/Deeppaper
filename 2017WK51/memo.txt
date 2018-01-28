@@ -1,2 +1,3 @@
 DongHyun Kim, SiameseNet
+Jiwon Jung, Focal Loss
 Jaehwi Park, GAN
