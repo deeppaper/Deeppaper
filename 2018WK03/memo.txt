@@ -1,0 +1,2 @@
+Seoha Song, LSTM
+Donghyun Kim, Bayesian Optimization for automated model selection
