@@ -37,3 +37,7 @@ Machine Learning Study Warehouse
   - Seoha Song
 2. Faster RCNN
   - Donghun Kim
+### 2018WK14
+1. Memory Networks
+  - Seong-Hwan Hong
+2. Distributed Representations of Words and Phrases and their Compositionality
