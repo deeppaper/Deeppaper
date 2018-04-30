@@ -1,0 +1,2911 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                            <title>리뷰 - Memory Networks - AI - Confluence</title>
+    
+        
+
+                        
+    
+                        
+    
+
+                
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta id="confluence-base-url" name="confluence-base-url" content="http://confluence.exem-oss.org">
+
+<meta id="atlassian-token" name="atlassian-token" content="e5bfe0f65ec59ca748f6f964555631187caaac70">
+
+
+<meta id="confluence-space-key" name="confluence-space-key" content="AI">
+<script type="text/javascript">
+        var contextPath = '';
+</script>
+
+    
+
+    <meta name="confluence-request-time" content="1525049630342">
+        
+    
+        
+            <meta name="ajs-is-space-admin" content="false"> <meta name="ajs-has-space-config" content="false">
+            <style>.ia-fixed-sidebar, .ia-splitter-left {width: 285px;}.theme-default .ia-splitter #main {margin-left: 285px;}.ia-fixed-sidebar {visibility: hidden;}</style>
+            <meta name="ajs-use-keyboard-shortcuts" content="true">
+            <meta name="ajs-discovered-plugin-features" content="{&quot;com.atlassian.confluence.plugins.confluence-jira-metadata&quot;:[&quot;inline-tasks-flag&quot;,&quot;linked-issues-dropdown&quot;],&quot;com.atlassian.confluence.plugins.confluence-dashboard&quot;:[&quot;transition-saved-for-later&quot;]}">
+            <meta name="stp-license-product-name" content="Confluence"> <meta name="stp-license-days-to-expiry" content="-251"> <meta name="stp-license-is-admin" content="false"> <meta name="stp-license-should-keep-banner-hidden" content="false">
+            <meta name="ajs-keyboardshortcut-hash" content="48a3ffabbf4baaa391abc0112208ba2">
+            <meta id="team-calendars-has-jira-link" content="true">
+            <meta name="ajs-team-calendars-display-time-format" content="displayTimeFormat12">
+            <meta id="team-calendars-display-week-number" content="false">
+            <meta id="team-calendars-user-timezone" content="ROK">
+            <script type="text/x-template" id="team-calendars-messages" title="team-calendars-messages"><fieldset class="i18n hidden"><input type="hidden" name="calendar3.month.long.july" value="July"><input type="hidden" name="calendar3.day.short.wednesday" value="Wed"><input type="hidden" name="calendar3.day.short.thursday" value="Thu"><input type="hidden" name="calendar3.month.short.march" value="Mar"><input type="hidden" name="calendar3.month.long.april" value="April"><input type="hidden" name="calendar3.month.long.october" value="October"><input type="hidden" name="calendar3.month.long.august" value="August"><input type="hidden" name="calendar3.month.short.july" value="Jul"><input type="hidden" name="calendar3.month.short.may" value="May"><input type="hidden" name="calendar3.month.short.november" value="Nov"><input type="hidden" name="calendar3.day.long.friday" value="Friday"><input type="hidden" name="calendar3.day.long.sunday" value="Sunday"><input type="hidden" name="calendar3.day.long.saturday" value="Saturday"><input type="hidden" name="calendar3.month.short.april" value="Apr"><input type="hidden" name="calendar3.day.long.wednesday" value="Wednesday"><input type="hidden" name="calendar3.month.long.december" value="December"><input type="hidden" name="calendar3.month.short.october" value="Oct"><input type="hidden" name="calendar3.day.long.monday" value="Monday"><input type="hidden" name="calendar3.month.short.june" value="Jun"><input type="hidden" name="calendar3.day.short.monday" value="Mon"><input type="hidden" name="calendar3.day.short.tuesday" value="Tue"><input type="hidden" name="calendar3.day.short.saturday" value="Sat"><input type="hidden" name="calendar3.month.long.march" value="March"><input type="hidden" name="calendar3.month.long.june" value="June"><input type="hidden" name="calendar3.month.short.february" value="Feb"><input type="hidden" name="calendar3.month.short.august" value="Aug"><input type="hidden" name="calendar3.month.short.december" value="Dec"><input type="hidden" name="calendar3.day.short.sunday" value="Sun"><input type="hidden" name="calendar3.month.long.february" value="February"><input type="hidden" name="calendar3.day.long.tuesday" value="Tuesday"><input type="hidden" name="calendar3.month.long.may" value="May"><input type="hidden" name="calendar3.month.long.september" value="September"><input type="hidden" name="calendar3.month.long.november" value="November"><input type="hidden" name="calendar3.month.short.january" value="Jan"><input type="hidden" name="calendar3.month.short.september" value="Sep"><input type="hidden" name="calendar3.day.long.thursday" value="Thursday"><input type="hidden" name="calendar3.month.long.january" value="January"><input type="hidden" name="calendar3.day.short.friday" value="Fri"></fieldset></script>
+            <meta name="ajs-is-confluence-admin" content="false">
+            <meta name="ajs-connection-timeout" content="10000">
+            <meta name="gliffy-license-type" content="LicenseType&lt;COMMUNITY&gt;">
+<meta name="gliffy-license-quantity" content="${pluginLicenseManager.userCount}">
+
+            <script type="text/x-template" title="gliffy-webpanel-footer">
+        <div class="gliffy-webpanel-footer"><span>This Confluence installation runs a Free Gliffy License - Evaluate the <a href="http://www.gliffy.com/products/confluence-plugin/">Gliffy Confluence Plugin</a> for your Wiki!</span></div>
+</script>
+
+
+            
+    
+    
+            <meta name="ajs-page-id" content="18711389">
+            <meta name="ajs-latest-page-id" content="18711389">
+            <meta name="ajs-content-type" content="page">
+            <meta name="ajs-page-title" content="리뷰 - Memory Networks">
+            <meta name="ajs-latest-published-page-title" content="리뷰 - Memory Networks">
+            <meta name="ajs-parent-page-title" content="짧은 리뷰, 리딩, 메모">
+            <meta name="ajs-parent-page-id" content="5211377">
+            <meta name="ajs-space-key" content="AI">
+            <meta name="ajs-space-name" content="AI">
+            <meta name="ajs-jira-metadata-count" content="-1">
+            <meta name="ajs-from-page-title" content="">
+            <meta name="ajs-can-remove-page" content="false">
+            <meta name="ajs-can-remove-page-hierarchy" content="false">
+            <meta name="ajs-browse-page-tree-mode" content="view">
+            <meta name="ajs-shared-drafts" content="false">
+            <meta name="ajs-user-display-name" content="임 도형">
+            <meta name="ajs-context-path" content="">
+            <meta name="ajs-base-url" content="http://confluence.exem-oss.org">
+            <meta name="ajs-version-number" content="6.2.2">
+            <meta name="ajs-build-number" content="7201">
+            <meta name="ajs-remote-user" content="dhrim">
+            <meta name="ajs-remote-user-key" content="f332c9ea58533407015981f9715a0003">
+            <meta name="ajs-remote-user-has-licensed-access" content="true">
+            <meta name="ajs-current-user-fullname" content="임 도형">
+            <meta name="ajs-current-user-avatar-url" content="/download/attachments/4491755/user-avatar">
+            <meta name="ajs-current-user-avatar-uri-reference" content="/download/attachments/4491755/user-avatar">
+            <meta name="ajs-static-resource-url-prefix" content="/s/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/_">
+            <meta name="ajs-global-settings-attachment-max-size" content="10485760000">
+            <meta name="ajs-user-locale" content="en_US">
+            <meta name="ajs-enabled-dark-features" content="site-wide.synchrony.disable,site-wide.shared-drafts.disable,confluence.view.edit.transition,confluence-inline-comments-resolved,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareContentEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.mentions.api.ConfluenceMentionEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.security.ForgotPasswordEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.tasklist.event.SendTaskEmailEvent,file-annotations,confluence.efi.onboarding.rich.space.content,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.comment.CommentCreateEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.requestaccess.events.AccessGrantedEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.PageMoveEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.follow.FollowEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentReplyEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostCreateEvent,confluence.table.resizable,notification.batch,confluence-inline-comments-rich-editor,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostUpdateEvent,site-wide.synchrony.opt-in,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentMentionUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.hipchat.api.events.HipChatUserMapped,quick-reload-inline-comments-flags,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.blogpost.BlogPostMovedEvent,clc.quick.create,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.PageUpdateEvent,cql.search.screen,nps.survey.inline.dialog,confluence.efi.onboarding.new.templates,pdf-preview,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageMovedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareCustomEvent,previews.sharing,previews.versions,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentUpdateEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.attachment.AttachmentBatchUploadCompletedEvent,collaborative-audit-log,notification.plugin.api.enabled.com.atlassian.confluence.efi.emails.events.OnboardingLessUsersEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.files.notifications.event.FileContentRemoveEvent,confluence.wrap.macro,previews.conversion-service,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.comment.CommentUpdateEvent,editor.ajax.save,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.async.PageEditedEvent,previews.trigger-all-file-types,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentResolveEvent,notification.plugin.api.enabled.com.atlassian.confluence.event.events.like.LikeCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.inlinecomments.events.InlineCommentCreateEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.requestaccess.events.AccessRequestedEvent,previews.sharing.pushstate,file-annotations.likes,collaborative.editing.frictionless.upgrade,notification.plugin.api.enabled.com.atlassian.confluence.event.events.content.page.PageCreateEvent,notification.plugin.api.enabled.com.atlassian.confluence.efi.emails.events.OnboardingNoSpaceCreatedEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareDraftEvent,notification.plugin.api.enabled.com.atlassian.confluence.plugins.sharepage.api.ShareAttachmentEvent,confluence-inline-comments,confluence-inline-comments-dangling-comment">
+            <meta name="ajs-atl-token" content="e5bfe0f65ec59ca748f6f964555631187caaac70">
+            <meta name="ajs-confluence-flavour" content="VANILLA">
+            <meta name="ajs-user-date-pattern" content="dd MMM yyyy">
+            <meta name="ajs-date.format" content="MMM dd, yyyy">
+    
+    <link rel="shortcut icon" href="http://confluence.exem-oss.org/s/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/11/_/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://confluence.exem-oss.org/s/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/11/_/favicon.ico">
+
+<link rel="search" type="application/opensearchdescription+xml" href="http://confluence.exem-oss.org/opensearch/osd.action" title="Confluence">
+    
+                    
+            <meta name="ajs-create-issue-metadata-show-discovery" content="true">
+            
+
+    <script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\u0022\u0022";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-hipchat-integration-plugin:discovery-javascript-data.link-active"]="{\u0022linkActive\u0022:true,\u0022conditionsMet\u0022:true,\u0022admin\u0022:false}";
+WRM._unparsedData["com.atlassian.analytics.analytics-client:policy-update-init.policy-update-data-provider"]="false";
+WRM._unparsedData["com.atlassian.analytics.analytics-client:programmatic-analytics-init.programmatic-analytics-data-provider"]="false";
+WRM._unparsedData["com.atlassian.applinks.applinks-plugin:applinks-common-exported.applinks-help-paths"]="{\u0022entries\u0022:{\u0022applinks.docs.root\u0022:\u0022https://confluence.atlassian.com/display/APPLINKS-052/\u0022,\u0022applinks.docs.diagnostics.troubleshoot.sslunmatched\u0022:\u0022SSL+and+application+link+troubleshooting+guide\u0022,\u0022applinks.docs.diagnostics.troubleshoot.oauthsignatureinvalid\u0022:\u0022OAuth+troubleshooting+guide\u0022,\u0022applinks.docs.diagnostics.troubleshoot.oauthtimestamprefused\u0022:\u0022OAuth+troubleshooting+guide\u0022,\u0022applinks.docs.delete.entity.link\u0022:\u0022Create+links+between+projects\u0022,\u0022applinks.docs.adding.application.link\u0022:\u0022Link+Atlassian+applications+to+work+together\u0022,\u0022applinks.docs.administration.guide\u0022:\u0022Application+Links+Documentation\u0022,\u0022applinks.docs.oauth.security\u0022:\u0022OAuth+security+for+application+links\u0022,\u0022applinks.docs.troubleshoot.application.links\u0022:\u0022Troubleshoot+application+links\u0022,\u0022applinks.docs.diagnostics.troubleshoot.unknownerror\u0022:\u0022Network+and+connectivity+troubleshooting+guide\u0022,\u0022applinks.docs.configuring.auth.trusted.apps\u0022:\u0022Configuring+Trusted+Applications+authentication+for+an+application+link\u0022,\u0022applinks.docs.diagnostics.troubleshoot.authlevelunsupported\u0022:\u0022OAuth+troubleshooting+guide\u0022,\u0022applinks.docs.diagnostics.troubleshoot.ssluntrusted\u0022:\u0022SSL+and+application+link+troubleshooting+guide\u0022,\u0022applinks.docs.diagnostics.troubleshoot.unknownhost\u0022:\u0022Network+and+connectivity+troubleshooting+guide\u0022,\u0022applinks.docs.delete.application.link\u0022:\u0022Link+Atlassian+applications+to+work+together\u0022,\u0022applinks.docs.link.applications\u0022:\u0022Link+Atlassian+applications+to+work+together\u0022,\u0022applinks.docs.diagnostics.troubleshoot.oauthproblem\u0022:\u0022OAuth+troubleshooting+guide\u0022,\u0022applinks.docs.diagnostics.troubleshoot.migration\u0022:\u0022Update+application+links+to+use+OAuth\u0022,\u0022applinks.docs.relocate.application.link\u0022:\u0022Link+Atlassian+applications+to+work+together\u0022,\u0022applinks.docs.administering.entity.links\u0022:\u0022Create+links+between+projects\u0022,\u0022applinks.docs.upgrade.application.link\u0022:\u0022OAuth+security+for+application+links\u0022,\u0022applinks.docs.diagnostics.troubleshoot.connectionrefused\u0022:\u0022Network+and+connectivity+troubleshooting+guide\u0022,\u0022applinks.docs.configuring.auth.oauth\u0022:\u0022OAuth+security+for+application+links\u0022,\u0022applinks.docs.insufficient.remote.permission\u0022:\u0022OAuth+security+for+application+links\u0022,\u0022applinks.docs.configuring.application.link.auth\u0022:\u0022OAuth+security+for+application+links\u0022,\u0022applinks.docs.diagnostics\u0022:\u0022Application+links+diagnostics\u0022,\u0022applinks.docs.configured.authentication.types\u0022:\u0022OAuth+security+for+application+links\u0022,\u0022applinks.docs.adding.entity.link\u0022:\u0022Create+links+between+projects\u0022,\u0022applinks.docs.diagnostics.troubleshoot.unexpectedresponse\u0022:\u0022Network+and+connectivity+troubleshooting+guide\u0022,\u0022applinks.docs.configuring.auth.basic\u0022:\u0022Configuring+Basic+HTTP+Authentication+for+an+Application+Link\u0022,\u0022applinks.docs.diagnostics.troubleshoot.authlevelmismatch\u0022:\u0022OAuth+troubleshooting+guide\u0022}}";
+WRM._unparsedData["com.atlassian.applinks.applinks-plugin:applinks-common-exported.applinks-types"]="{\u0022crowd\u0022:\u0022Crowd\u0022,\u0022confluence\u0022:\u0022Confluence\u0022,\u0022fecru\u0022:\u0022FishEye / Crucible\u0022,\u0022stash\u0022:\u0022Bitbucket Server\u0022,\u0022jira\u0022:\u0022JIRA\u0022,\u0022refapp\u0022:\u0022Reference Application\u0022,\u0022bamboo\u0022:\u0022Bamboo\u0022,\u0022generic\u0022:\u0022Generic Application\u0022}";
+WRM._unparsedData["com.atlassian.applinks.applinks-plugin:applinks-common-exported.entity-types"]="{\u0022singular\u0022:{\u0022refapp.charlie\u0022:\u0022Charlie\u0022,\u0022fecru.project\u0022:\u0022Crucible Project\u0022,\u0022fecru.repository\u0022:\u0022FishEye Repository\u0022,\u0022stash.project\u0022:\u0022Bitbucket Server Project\u0022,\u0022generic.entity\u0022:\u0022Generic Project\u0022,\u0022confluence.space\u0022:\u0022Confluence Space\u0022,\u0022bamboo.project\u0022:\u0022Bamboo Project\u0022,\u0022jira.project\u0022:\u0022JIRA Project\u0022},\u0022plural\u0022:{\u0022refapp.charlie\u0022:\u0022Charlies\u0022,\u0022fecru.project\u0022:\u0022Crucible Projects\u0022,\u0022fecru.repository\u0022:\u0022FishEye Repositories\u0022,\u0022stash.project\u0022:\u0022Bitbucket Server Projects\u0022,\u0022generic.entity\u0022:\u0022Generic Projects\u0022,\u0022confluence.space\u0022:\u0022Confluence Spaces\u0022,\u0022bamboo.project\u0022:\u0022Bamboo Projects\u0022,\u0022jira.project\u0022:\u0022JIRA Projects\u0022}}";
+WRM._unparsedData["com.atlassian.applinks.applinks-plugin:applinks-common-exported.authentication-types"]="{\u0022com.atlassian.applinks.api.auth.types.BasicAuthenticationProvider\u0022:\u0022Basic Access\u0022,\u0022com.atlassian.applinks.api.auth.types.TrustedAppsAuthenticationProvider\u0022:\u0022Trusted Applications\u0022,\u0022com.atlassian.applinks.api.auth.types.CorsAuthenticationProvider\u0022:\u0022CORS\u0022,\u0022com.atlassian.applinks.api.auth.types.OAuthAuthenticationProvider\u0022:\u0022OAuth\u0022,\u0022com.atlassian.applinks.api.auth.types.TwoLeggedOAuthAuthenticationProvider\u0022:\u0022OAuth\u0022,\u0022com.atlassian.applinks.api.auth.types.TwoLeggedOAuthWithImpersonationAuthenticationProvider\u0022:\u0022OAuth\u0022}";
+WRM._unparsedData["com.atlassian.confluence.plugins.synchrony-interop:synchrony-status-banner-loader.synchrony-status"]="false";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-feature-discovery-plugin:confluence-feature-discovery-plugin-resources.test-mode"]="false";
+WRM._unparsedData["com.atlassian.confluence.plugins.confluence-license-banner:confluence-license-banner-resources.license-details"]="{\u0022daysBeforeLicenseExpiry\u0022:0,\u0022daysBeforeMaintenanceExpiry\u0022:0,\u0022showLicenseExpiryBanner\u0022:false,\u0022showMaintenanceExpiryBanner\u0022:false,\u0022renewUrl\u0022:null,\u0022salesEmail\u0022:null}";
+if(window.WRM._dataArrived)window.WRM._dataArrived();</script>
+<link type="text/css" rel="stylesheet" href="./Review_Memory_networks_files/batch.css" data-wrm-key="_super" data-wrm-batch-type="context" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/0a9710db1bc9eec7b984ff8b7e55a2de-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/84659ac4c1e45bd2d0be562d3fdacb4d/_/download/contextbatch/css/_super/batch.css?conditionalComment=lt+IE+9" data-wrm-key="_super" data-wrm-batch-type="context" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/0a9710db1bc9eec7b984ff8b7e55a2de-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/84659ac4c1e45bd2d0be562d3fdacb4d/_/download/contextbatch/css/_super/batch.css?conditionalComment=lte+IE+9" data-wrm-key="_super" data-wrm-batch-type="context" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="./Review_Memory_networks_files/batch(1).css" data-wrm-key="atl.confluence.plugins.pagetree-desktop,main,viewcontent,atl.general,page,atl.comments,-_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="./Review_Memory_networks_files/batch(2).css" media="print" data-wrm-key="atl.confluence.plugins.pagetree-desktop,main,viewcontent,atl.general,page,atl.comments,-_super" data-wrm-batch-type="context">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/602a48f52e56f12083c0b00738b9be6d-T/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/fcd12868ab7aa40696ca7ba72d4f99ab/_/download/contextbatch/css/atl.confluence.plugins.pagetree-desktop,main,viewcontent,atl.general,page,atl.comments,-_super/batch.css?analytics-enabled=true&amp;analytics-uploadable=true&amp;anonymous-access-enabled=true&amp;build-number=7201&amp;conditionalComment=lt+IE+9&amp;confluence.table.resizable=true&amp;confluence.view.edit.transition=true&amp;highlightactions=true&amp;hostenabled=true&amp;is-server-instance=true&amp;nps-acknowledged=true&amp;nps-enabled=true" data-wrm-key="atl.confluence.plugins.pagetree-desktop,main,viewcontent,atl.general,page,atl.comments,-_super" data-wrm-batch-type="context" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="./Review_Memory_networks_files/custom.css" media="all">
+<script type="text/javascript" src="./Review_Memory_networks_files/batch.js" data-wrm-key="_super" data-wrm-batch-type="context"></script><style type="text/css"></style><style type="text/css"></style>
+<script type="text/javascript" src="./Review_Memory_networks_files/batch(3).js" data-wrm-key="atl.confluence.plugins.pagetree-desktop,main,viewcontent,atl.general,page,atl.comments,-_super" data-wrm-batch-type="context"></script><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display:none;}ng\:form{display:block;}</style>
+
+    
+        
+            <meta name="stp-license-product-name" content="Confluence"> <meta name="stp-license-days-to-expiry" content="-251"> <meta name="stp-license-is-admin" content="false"> <meta name="stp-license-should-keep-banner-hidden" content="false">
+    
+
+        
+        <meta name="ajs-site-title" content="Confluence">
+            
+    
+
+    
+                <link rel="canonical" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+        <link rel="shortlink" href="http://confluence.exem-oss.org/x/XYMdAQ">
+    <meta name="wikilink" content="[AI:리뷰 - Memory Networks]">
+    <meta name="page-version" content="2">
+    <meta name="ajs-page-version" content="2">
+
+<script type="text/javascript" charset="utf-8" src="./Review_Memory_networks_files/batch(4).js"></script><link rel="stylesheet" type="text/css" href="./Review_Memory_networks_files/batch(5).css"><script type="text/javascript" charset="utf-8" src="./Review_Memory_networks_files/batch(6).js"></script>
+            <meta name="ajs-use-watch" content="false">
+            <meta name="ajs-attachment-source-content-id" content="18711389">
+            <meta name="ajs-use-inline-tasks" content="true">
+            <meta name="ajs-heartbeat" content="true">
+            <meta name="ajs-action-locale" content="en_US">
+            <meta name="ajs-editor-plugin-resource-prefix" content="/s/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/6.2.2/_">
+            <meta name="ajs-edit-mode" content="legacy">
+            <meta name="ajs-user-watching-own-content" content="true">
+            <meta name="ajs-new-page" content="false">
+            <meta name="ajs-editor-mode" content="richtext">
+            <meta name="ajs-auto-start" content="false">
+            <meta name="ajs-conf-revision" content="confluence$content$18711389.9">
+            <meta name="ajs-sync-revision-source" content="">
+            <meta name="ajs-draft-id" content="0">
+            <meta name="ajs-draft-share-id" content="">
+            <meta name="ajs-content-type" content="page">
+            <meta name="ajs-collaborative-editor-status" content="">
+            <meta name="ajs-existing-draft-id" content="0">
+            <meta name="ajs-content-id" content="18711389">
+            <meta name="ajs-form-name" content="inlinecommentform">
+            <meta name="ajs-can-attach-files" content="true">
+            <meta name="ajs-show-draft-message" content="false">
+            <meta name="ajs-shared-drafts" content="false">
+            <meta name="ajs-collaborative-content" content="false">
+            <meta name="ajs-min-editor-height" content="150">
+            <meta name="ajs-version-comment" content="">
+            <meta name="ajs-draft-type" content="page">
+                
+                <meta name="ajs-synchrony-token" content="">
+    <meta name="ajs-synchrony-base-url" content="">
+    <meta name="ajs-synchrony-app-id" content="">
+    <meta name="ajs-synchrony-expiry" content="">
+    <meta name="ajs-use-xhr-fallback" content="">
+
+            		    <meta name="ajs-max-thumb-width" content="300">
+		    <meta name="ajs-max-thumb-height" content="300">
+		    <meta name="ajs-can-send-email" content="true">
+		    <meta name="ajs-is-dev-mode" content="false">
+		    <meta name="ajs-draft-save-interval" content="30000">
+		    <meta name="ajs-show-hidden-user-macros" content="false">
+		    <meta name="ajs-is-admin" content="false">
+		    <meta name="ajs-confluence.prefs.editor.disable.autocomplete" content="false">
+		    <meta name="ajs-confluence.prefs.editor.disable.autoformat" content="false">
+		    <meta name="ajs-heartbeat-interval" content="30000">
+	
+    <link rel="stylesheet" type="text/css" href="./Review_Memory_networks_files/com.atlassian.confluence.ext.newcode-macro-plugin_sh-theme-confluence.css"><script type="text/javascript" charset="utf-8" src="./Review_Memory_networks_files/batch(7).js"></script><link rel="stylesheet" type="text/css" href="./Review_Memory_networks_files/batch(8).css"><script type="text/javascript" charset="utf-8" src="./Review_Memory_networks_files/batch(9).js"></script><script type="text/javascript" charset="utf-8" src="./Review_Memory_networks_files/console_fix.js"></script><script type="text/javascript" charset="utf-8" src="./Review_Memory_networks_files/com.atlassian.confluence.plugins.editor.confluence-source-editor_atlassian-source-editor-javascript.js"></script><link rel="stylesheet" type="text/css" href="./Review_Memory_networks_files/batch(10).css"><script type="text/javascript" charset="utf-8" src="./Review_Memory_networks_files/batch(11).js"></script><style type="text/css"></style></head>
+
+    
+<body id="com-atlassian-confluence" class="theme-default  aui-layout aui-theme-default" data-aui-version="6.0.6">
+
+        
+            <div id="stp-licenseStatus-banner"></div>
+    <ul id="assistive-skip-links" class="assistive">
+    <li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#title-heading">Skip to content</a></li>
+    <li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#breadcrumbs">Skip to breadcrumbs</a></li>
+    <li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#header-menu-bar">Skip to header menu</a></li>
+    <li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#navigation">Skip to action menu</a></li>
+    <li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#quick-search-query">Skip to quick search</a></li>
+</ul>
+<div id="page">
+<div id="full-height-container">
+    <div id="header-precursor">
+        <div class="cell">
+            
+                            </div>
+    </div>
+            
+
+
+
+
+
+<header id="header" role="banner" class="">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation" data-aui-responsive="true"><div class="aui-header-inner"><div class="aui-header-before"><a class=" aui-dropdown2-trigger app-switcher-trigger" aria-controls="app-switcher" aria-haspopup="true" role="button" tabindex="0" data-aui-trigger="" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#app-switcher" resolved="" aria-expanded="false"><span class="aui-icon aui-icon-small aui-iconfont-appswitcher">Linked Applications</span></a><div id="app-switcher" class="aui-dropdown2 aui-style-default aui-layer" role="menu" aria-hidden="true" data-is-switcher="true" data-environment="{&quot;isUserAdmin&quot;:false,&quot;isAppSuggestionAvailable&quot;:false,&quot;isSiteAdminUser&quot;:false}" resolved=""><div class="aui-dropdown2-section"><ul class="nav-links"><li class="nav-link"><a href="http://jira.exem-oss.org/secure/MyJiraHome.jspa" class="aui-dropdown2-radio " title="http://jira.exem-oss.org/secure/MyJiraHome.jspa" resolved="" aria-checked="false" tabindex="0" role="radio"><span class="nav-link-label">JIRA</span></a></li><li class="nav-link nav-link-local"><a href="http://confluence.exem-oss.org/" class="aui-dropdown2-radio aui-dropdown2-checked checked" title="http://confluence.exem-oss.org/" resolved="" aria-checked="true" tabindex="0" role="radio"><span class="nav-link-label">Confluence</span></a></li><li class="nav-link"><a href="http://build.exem-oss.org/" class="aui-dropdown2-radio " title="http://build.exem-oss.org/" resolved="" aria-checked="false" tabindex="0" role="radio"><span class="nav-link-label">Atlassian Bamboo</span></a></li></ul></div></div></div><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-confluence"><a href="http://confluence.exem-oss.org/"><span class="aui-header-logo-device">Confluence</span></a></h1><ul class="aui-nav" resolved="" style="width: auto;">
+                            <li>
+            
+        
+        
+<a id="space-menu-link" class=" aui-dropdown2-trigger aui-nav-link" aria-controls="space-menu-link-content" aria-haspopup="true" role="button" title="Spaces" tabindex="0" data-aui-trigger="" resolved="" aria-expanded="false" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#space-menu-link-content">Spaces<span class="icon aui-icon-dropdown"></span></a><div id="space-menu-link-content" class="aui-dropdown2 aui-style-default aui-dropdown2-in-header aui-layer" role="menu" aria-hidden="true" resolved=""><div role="presentation"></div></div>
+        </li>
+                    <li>
+            
+    
+        
+<a id="people-directory-link" href="http://confluence.exem-oss.org/browsepeople.action" class=" aui-nav-imagelink" title="People">
+            <span>People</span>
+    </a>
+        </li>
+                    <li>
+            
+    
+        
+<a id="ideation-header-action" href="http://confluence.exem-oss.org/plugins/servlet/ideation" class=" aui-nav-imagelink" title="">
+            <span>Ideation</span>
+    </a>
+        </li>
+                    <li>
+            
+    
+        
+<a href="http://confluence.exem-oss.org/calendar/mycalendar.action" class=" aui-nav-imagelink" title="Calendars">
+            <span>Calendars</span>
+    </a>
+        </li>
+                                        <li class="aui-buttons">
+                                    
+                                        <a href="http://confluence.exem-oss.org/pages/createpage.action?spaceKey=AI&amp;fromPageId=18711389&amp;src=quick-create" id="quick-create-page-button" class="aui-button aui-button-primary" title="Create blank page (c)" tabindex="0">Create</a>
+                                <a href="http://confluence.exem-oss.org/pages/createpage.action?spaceKey=AI&amp;fromPageId=18711389" id="create-page-button" class="aui-button aui-button-primary clc-create-dialog-btn" title="Create from template" tabindex="0"><span class="aui-icon aui-icon-small aui-iconfont-more">Create </span></a>
+            </li>
+    </ul>
+</div><div class="aui-header-secondary"><ul class="aui-nav" resolved="">
+                        <li>
+        <form id="quick-search" class="aui-quicksearch dont-default-focus header-quicksearch" action="http://confluence.exem-oss.org/dosearchsite.action" method="get"><fieldset><label for="quick-search-query" class="assistive">Quick Search</label><input id="quick-search-query" class="text app-search search quick-search-query" type="text" accesskey="q" autocomplete="off" name="queryString" title="Quick Search (/or g , g)"><input id="quick-search-submit" class="quick-search-submit" type="submit" value="Search"><div class="aui-dd-parent quick-nav-drop-down"></div></fieldset></form>
+    </li>
+        <li>
+            
+        <a id="help-menu-link" class="aui-nav-link aui-dropdown2-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" aria-haspopup="true" title="Help" resolved="" aria-controls="help-menu-link-content" aria-expanded="false">
+        <span class="aui-icon aui-icon-small aui-iconfont-help">Help</span>
+    </a>
+    <nav id="help-menu-link-content" class="aui-dropdown2 aui-style-default aui-layer" aria-hidden="true" resolved="">
+                    <div class="aui-dropdown2-section">
+                                <ul id="help-menu-link-leading" class="aui-list-truncate section-leading first">
+                                            <li>
+        
+            
+<a id="confluence-help-link" href="https://docs.atlassian.com/confluence/docs-62/" class="    " title="Visit the Confluence documentation home" target="_blank">
+        Online Help
+</a>
+</li>
+                                            <li>
+    
+                
+<a id="keyboard-shortcuts-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="    " title="View available keyboard shortcuts (?)">
+        Keyboard Shortcuts
+</a>
+</li>
+                                            <li>
+    
+            
+<a id="feed-builder-link" href="http://confluence.exem-oss.org/dashboard/configurerssfeed.action" class="    " title="Create your custom RSS feed.">
+        Feed Builder
+</a>
+</li>
+                                            <li>
+    
+            
+<a id="whats-new-menu-link" href="https://confluence.atlassian.com/display/DOC/Confluence+6.2+Release+Notes?a=false" class="    " title="">
+        What’s new
+</a>
+</li>
+                                            <li>
+    
+                
+<a id="gadget-directory-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="   user-item administration-link " title="Browse gadgets provided by Confluence">
+        Available Gadgets
+</a>
+</li>
+                                            <li>
+    
+            
+<a id="confluence-about-link" href="http://confluence.exem-oss.org/aboutconfluencepage.action" class="    " title="Get more information about Confluence">
+        About Confluence
+</a>
+</li>
+                                    </ul>
+            </div>
+            </nav>
+    
+    </li>
+        <li>
+                
+    
+    </li>
+        <li>
+                    
+        
+            
+<a id="notifications-anchor" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="mw-anchor read aui-nav-imagelink" title="Open Notifications (g , n)"><div class="badge-i aui-icon aui-icon-small aui-iconfont-workbox-empty"></div><span class="badge-w"><span class="badge">0</span></span></a>
+    
+    </li>
+        <li>
+                                            
+        <a id="user-menu-link" class="aui-dropdown2-trigger " aria-haspopup="true" data-username="dhrim" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" title="임 도형" resolved="" aria-controls="user-menu-link-content" aria-expanded="false">
+                    <div class="aui-avatar aui-avatar-small">
+                <div class="aui-avatar-inner">
+                                                                                                    <img src="./Review_Memory_networks_files/user-avatar">
+                </div>
+            </div>
+            <span class="aui-icon-dropdown"></span>
+        </a>
+        <nav id="user-menu-link-content" class="aui-dropdown2 aui-style-default aui-layer" aria-hidden="true" resolved="">
+                            <div class="aui-dropdown2-section">
+                    <ul id="user-menu-link-user-preferences" class="aui-list-truncate section-user-preferences first">
+                                                    <li>
+        
+            
+<a id="view-personal-space-link" href="http://confluence.exem-oss.org/spaces/viewspace.action?key=~dhrim" class="   user-item personal-space " title="">
+        Personal Space
+</a>
+</li>
+                                                    <li>
+    
+            
+<a id="view-user-history-link" href="http://confluence.exem-oss.org/users/viewuserhistory.action" class="   user-item user-history popup-link " title=" (g , r)">
+        Recently Viewed
+</a>
+</li>
+                                            </ul>
+                </div>
+                            <div class="aui-dropdown2-section">
+                    <ul id="user-menu-link-user-content" class="aui-list-truncate section-user-content">
+                                                    <li>
+    
+            
+<a id="view-user-profile-link" href="http://confluence.exem-oss.org/users/viewmyprofile.action" class="   user-item user-profile " title="">
+        Profile
+</a>
+</li>
+                                                    <li>
+    
+            
+<a id="view-mytasks-link" href="http://confluence.exem-oss.org/plugins/inlinetasks/mytasks.action" class="   user-item list-user-status " title="">
+        Tasks
+</a>
+</li>
+                                                    <li>
+    
+            
+<a id="user-favourites-link" href="http://confluence.exem-oss.org/users/viewmyfavourites.action" class="   user-item " title="">
+        Saved for later
+</a>
+</li>
+                                                    <li>
+    
+            
+<a id="user-watches-link" href="http://confluence.exem-oss.org/users/viewnotifications.action" class="   user-item " title="">
+        Watches
+</a>
+</li>
+                                                    <li>
+    
+            
+<a id="user-drafts-link" href="http://confluence.exem-oss.org/users/viewmydrafts.action" class="   user-item " title="">
+        Drafts
+</a>
+</li>
+                                                    <li>
+    
+            
+<a id="user-network-link" href="http://confluence.exem-oss.org/users/viewfollow.action?username=dhrim" class="   follow-link " title="">
+        Network
+</a>
+</li>
+                                                    <li>
+    
+            
+<a id="user-settings-link" href="http://confluence.exem-oss.org/users/viewmysettings.action" class="   user-item " title="">
+        Settings
+</a>
+</li>
+                                                    <li>
+    
+            
+<a id="upm-requests-link" href="http://confluence.exem-oss.org/plugins/servlet/upm/requests?source=header_user" class="    " title="">
+        Atlassian Marketplace
+</a>
+</li>
+                                            </ul>
+                </div>
+                            <div class="aui-dropdown2-section">
+                    <ul id="user-menu-link-user-operations" class="aui-list-truncate section-user-operations">
+                                                    <li>
+    
+            
+<a id="logout-link" href="http://confluence.exem-oss.org/logout.action" class="   user-item logout-link " title="">
+        Log Out
+</a>
+</li>
+                                            </ul>
+                </div>
+                    </nav>
+                    
+    </li>
+    </ul>
+</div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+    <br class="clear">
+</header>
+    
+
+    
+    	<div class="ia-splitter">
+    		<div class="ia-splitter-left">
+    			<div class="ia-fixed-sidebar" style="width: 400px; visibility: visible; top: 41px; left: 0px;">
+                                            
+                            <div class="acs-side-bar ia-scrollable-section"><div class="acs-side-bar-space-info tipsy-enabled" data-configure-tooltip="Edit space details"><div class="avatar"><div class="space-logo" data-key="AI" data-name="AI" data-entity-type="confluence.space"><div class="avatar-img-container"><div class="avatar-img-wrapper"><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4490336&amp;src=sidebar" title="AI"><img class="avatar-img" src="./Review_Memory_networks_files/default-space-logo-256.png" alt="AI"></a></div></div></div></div><div class="space-information-container"><div class="name"><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4490336&amp;src=sidebar" title="AI">AI</a></div><div class="flyout-handle icon"></div><div class="favourite-space-icon"><button title="Add to my spaces" id="space-favourite-add" class="space-favourite aui-icon aui-icon-small aui-iconfont-unstar"></button><button class=" space-favourite aui-icon aui-icon-small aui-iconfont-star" id="space-favourite-remove" title="Remove from my spaces"></button></div></div></div><div class="acs-side-bar-content"><div class="acs-nav-wrapper"><div class="acs-nav" data-has-create-permission="true" data-quick-links-state="hide" data-page-tree-state="null" data-nav-type="page-tree"><div class="acs-nav-sections"></div></div></div><div class="ia-secondary-container tipsy-enabled" data-tree-type="page-tree"><div class="ia-secondary-header"><h5 class="ia-secondary-header-title page-tree"><span class="icon"></span><span class="label">Page tree</span></h5></div><div class="ia-secondary-content">
+
+
+<div class="plugin_pagetree conf-macro output-inline" data-hasbody="false" data-macro-name="pagetree">
+
+        
+        
+    <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
+        <div class="plugin_pagetree_children" id="children4490336-0">
+<ul class="plugin_pagetree_children_list" id="child_ul4490336-0">
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus14746031-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan14746031-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=14746031&amp;src=contextnavpagetreemode">드릴AI사업</a>
+        </span>
+            </div>
+
+        <div id="children14746031-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus4491998-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan4491998-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4491998&amp;src=contextnavpagetreemode">제조AI과제</a>
+        </span>
+            </div>
+
+        <div id="children4491998-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus4490341-0" class="plugin_pagetree_childtoggle icon icon-section-opened" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan4490341-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4490341&amp;src=contextnavpagetreemode">제조AI 일반</a>
+        </span>
+            </div>
+
+        <div id="children4490341-0" class="plugin_pagetree_children_container">
+                                                        <ul class="plugin_pagetree_children_list" id="child_ul4490341-0">
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan4493193-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4493193&amp;src=contextnavpagetreemode">2017년도 일정</a>
+        </span>
+            </div>
+
+        <div id="children4493193-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus11174221-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan11174221-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=11174221&amp;src=contextnavpagetreemode">AI 교육</a>
+        </span>
+            </div>
+
+        <div id="children11174221-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus14747823-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan14747823-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=14747823&amp;src=contextnavpagetreemode">AI 아이디어</a>
+        </span>
+            </div>
+
+        <div id="children14747823-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus4492830-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan4492830-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4492830&amp;src=contextnavpagetreemode">개발/연구 환경 설정</a>
+        </span>
+            </div>
+
+        <div id="children4492830-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus4493338-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan4493338-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4493338&amp;src=contextnavpagetreemode">업무 기록</a>
+        </span>
+            </div>
+
+        <div id="children4493338-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus5217949-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5217949-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5217949&amp;src=contextnavpagetreemode">완료작업 저장소</a>
+        </span>
+            </div>
+
+        <div id="children5217949-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus9076995-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan9076995-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=9076995&amp;src=contextnavpagetreemode">인턴 프로그램</a>
+        </span>
+            </div>
+
+        <div id="children9076995-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus12882775-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan12882775-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=12882775&amp;src=contextnavpagetreemode">임시_주간공유_링크</a>
+        </span>
+            </div>
+
+        <div id="children12882775-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus4492743-0" class="plugin_pagetree_childtoggle icon icon-section-opened" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan4492743-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4492743&amp;src=contextnavpagetreemode">지식 자료</a>
+        </span>
+            </div>
+
+        <div id="children4492743-0" class="plugin_pagetree_children_container">
+                                                        <ul class="plugin_pagetree_children_list" id="child_ul4492743-0">
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus4490406-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan4490406-0">                        <a href="http://confluence.exem-oss.org/display/AI/Shared+links?src=contextnavpagetreemode">Shared links</a>
+        </span>
+            </div>
+
+        <div id="children4490406-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus4492827-0" class="plugin_pagetree_childtoggle icon icon-section-opened" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan4492827-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4492827&amp;src=contextnavpagetreemode">기반 지식 리스트</a>
+        </span>
+            </div>
+
+        <div id="children4492827-0" class="plugin_pagetree_children_container">
+                                                        <ul class="plugin_pagetree_children_list" id="child_ul4492827-0">
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus4492627-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan4492627-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4492627&amp;src=contextnavpagetreemode">기반 지식 - Autoencoder</a>
+        </span>
+            </div>
+
+        <div id="children4492627-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5215877-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5215877&amp;src=contextnavpagetreemode">기반 지식 - Backpropagation</a>
+        </span>
+            </div>
+
+        <div id="children5215877-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus5218683-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5218683-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5218683&amp;src=contextnavpagetreemode">기반 지식 - CNN</a>
+        </span>
+            </div>
+
+        <div id="children5218683-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus5212947-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5212947-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5212947&amp;src=contextnavpagetreemode">기반 지식 - Cost Function</a>
+        </span>
+            </div>
+
+        <div id="children5212947-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus11175535-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan11175535-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=11175535&amp;src=contextnavpagetreemode">기반 지식 - Generative Adversarial Network - 작성중</a>
+        </span>
+            </div>
+
+        <div id="children11175535-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus5212042-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5212042-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5212042&amp;src=contextnavpagetreemode">기반 지식 - Gradient Descent Optimizer</a>
+        </span>
+            </div>
+
+        <div id="children5212042-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5213490-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5213490&amp;src=contextnavpagetreemode">기반 지식 - Jupyter &amp; JupyterHub</a>
+        </span>
+            </div>
+
+        <div id="children5213490-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5216414-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5216414&amp;src=contextnavpagetreemode">기반 지식 - Numpy</a>
+        </span>
+            </div>
+
+        <div id="children5216414-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus5212951-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5212951-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5212951&amp;src=contextnavpagetreemode">기반 지식 - Python</a>
+        </span>
+            </div>
+
+        <div id="children5212951-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus5218699-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5218699-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5218699&amp;src=contextnavpagetreemode">기반 지식 - Reinforcement Learning</a>
+        </span>
+            </div>
+
+        <div id="children5218699-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5217346-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5217346&amp;src=contextnavpagetreemode">기반 지식 - RNN</a>
+        </span>
+            </div>
+
+        <div id="children5217346-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus4493172-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan4493172-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4493172&amp;src=contextnavpagetreemode">기반 지식 - TensorFlow</a>
+        </span>
+            </div>
+
+        <div id="children4493172-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus5211690-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5211690-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5211690&amp;src=contextnavpagetreemode">기반 지식 - 신경망 전반</a>
+        </span>
+            </div>
+
+        <div id="children5211690-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus5210152-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5210152-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5210152&amp;src=contextnavpagetreemode">기타 사항들</a>
+        </span>
+            </div>
+
+        <div id="children5210152-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus4492911-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan4492911-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4492911&amp;src=contextnavpagetreemode">리뷰 대상</a>
+        </span>
+            </div>
+
+        <div id="children4492911-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5212977-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5212977&amp;src=contextnavpagetreemode">작성중 혹은 임시 저장</a>
+        </span>
+            </div>
+
+        <div id="children5212977-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus5211377-0" class="plugin_pagetree_childtoggle icon icon-section-opened" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5211377-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5211377&amp;src=contextnavpagetreemode">짧은 리뷰, 리딩, 메모</a>
+        </span>
+            </div>
+
+        <div id="children5211377-0" class="plugin_pagetree_children_container">
+                                                        <ul class="plugin_pagetree_children_list" id="child_ul5211377-0">
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5211995-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5211995&amp;src=contextnavpagetreemode">리뷰 - Active Object Localization with Deep Reinforcement Learning</a>
+        </span>
+            </div>
+
+        <div id="children5211995-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan16482544-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=16482544&amp;src=contextnavpagetreemode">리뷰 - ADGAN</a>
+        </span>
+            </div>
+
+        <div id="children16482544-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5217936-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5217936&amp;src=contextnavpagetreemode">리뷰 - A Neural Algorithm of Artistic Style</a>
+        </span>
+            </div>
+
+        <div id="children5217936-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan16482482-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=16482482&amp;src=contextnavpagetreemode">리뷰 - AnoGAN</a>
+        </span>
+            </div>
+
+        <div id="children16482482-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5213738-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5213738&amp;src=contextnavpagetreemode">리뷰 - AWS Machine Learning 서비스</a>
+        </span>
+            </div>
+
+        <div id="children5213738-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan16482590-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=16482590&amp;src=contextnavpagetreemode">리뷰 - Conditional GAN</a>
+        </span>
+            </div>
+
+        <div id="children16482590-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan14747059-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=14747059&amp;src=contextnavpagetreemode">리뷰 - Continual Learning with Deep Generative Replay</a>
+        </span>
+            </div>
+
+        <div id="children14747059-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5218786-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5218786&amp;src=contextnavpagetreemode">리뷰 - Convolutional Sequence to Sequence Learning</a>
+        </span>
+            </div>
+
+        <div id="children5218786-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5215963-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5215963&amp;src=contextnavpagetreemode">리뷰 - Deep Learning, Where are you going</a>
+        </span>
+            </div>
+
+        <div id="children5215963-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan16487084-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=16487084&amp;src=contextnavpagetreemode">리뷰 - Deformable Convolutional Networks</a>
+        </span>
+            </div>
+
+        <div id="children16487084-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan14747136-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=14747136&amp;src=contextnavpagetreemode">리뷰 - DiscoGAN</a>
+        </span>
+            </div>
+
+        <div id="children14747136-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan18711354-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711354&amp;src=contextnavpagetreemode">리뷰 - Distributed Representations of Words and Phrases and their Compositionality</a>
+        </span>
+            </div>
+
+        <div id="children18711354-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan16482553-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=16482553&amp;src=contextnavpagetreemode">리뷰 - Finding Anomalies with Generative Adversarial Networks for a Patrolbot</a>
+        </span>
+            </div>
+
+        <div id="children16482553-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan18712744-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18712744&amp;src=contextnavpagetreemode">리뷰 - How to build your own AlphaZero AI using Python and Keras</a>
+        </span>
+            </div>
+
+        <div id="children18712744-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan16482961-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=16482961&amp;src=contextnavpagetreemode">리뷰 - Image to Image Translation with Coditional Adversarial Network</a>
+        </span>
+            </div>
+
+        <div id="children16482961-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan18712701-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18712701&amp;src=contextnavpagetreemode">리뷰 - Learning to Learn by Gradient Descent by Gradient Descent</a>
+        </span>
+            </div>
+
+        <div id="children18712701-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan18712738-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18712738&amp;src=contextnavpagetreemode">리뷰 - Learning to Learn without Grandient Descent by Grandient Descent</a>
+        </span>
+            </div>
+
+        <div id="children18712738-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan14747832-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=14747832&amp;src=contextnavpagetreemode">리뷰 - Machine Learning Applications for Data Center Optimization</a>
+        </span>
+            </div>
+
+        <div id="children14747832-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span plugin_pagetree_current" id="childrenspan18711389-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389&amp;src=contextnavpagetreemode">리뷰 - Memory Networks</a>
+        </span>
+            </div>
+
+        <div id="children18711389-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5211405-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5211405&amp;src=contextnavpagetreemode">리뷰 - Meta-Learning with Memory-Augmented Neurla Networks</a>
+        </span>
+            </div>
+
+        <div id="children5211405-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5215686-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5215686&amp;src=contextnavpagetreemode">리뷰 - Nuts and Bolts of Building AI Application using Deep Learning</a>
+        </span>
+            </div>
+
+        <div id="children5215686-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5216293-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5216293&amp;src=contextnavpagetreemode">리뷰 - Playing Atari with Deep Reinforcement Learning</a>
+        </span>
+            </div>
+
+        <div id="children5216293-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan18712789-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18712789&amp;src=contextnavpagetreemode">리뷰 -  Satellite Image Forgery Detection and Localization Using GAN and One-Class Classifier</a>
+        </span>
+            </div>
+
+        <div id="children18712789-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan18713360-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18713360&amp;src=contextnavpagetreemode">리뷰 - StarGAN</a>
+        </span>
+            </div>
+
+        <div id="children18713360-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan16482561-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=16482561&amp;src=contextnavpagetreemode">리뷰 - Training Adversarial Discriminators for Cross-channel Abnormal Event Detection in Crowds</a>
+        </span>
+            </div>
+
+        <div id="children16482561-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5215652-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5215652&amp;src=contextnavpagetreemode">리뷰 - Visualizing Data Using T-SNE</a>
+        </span>
+            </div>
+
+        <div id="children5215652-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5218107-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5218107&amp;src=contextnavpagetreemode">리뷰 - 딥마인드의 데미스 하시비스 강연</a>
+        </span>
+            </div>
+
+        <div id="children5218107-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus5215694-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan5215694-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5215694&amp;src=contextnavpagetreemode">리뷰 - 제1회 대전 AI 포럼 발표 자료</a>
+        </span>
+            </div>
+
+        <div id="children5215694-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <span class="no-children icon"></span>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan14745763-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=14745763&amp;src=contextnavpagetreemode">정리 - MCTS 이해</a>
+        </span>
+            </div>
+
+        <div id="children14745763-0" class="plugin_pagetree_children_container">
+            </div>
+    </li>
+                                        </ul>
+                                        </div>
+    </li>
+                                        </ul>
+                                        </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus4493170-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan4493170-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4493170&amp;src=contextnavpagetreemode">기타 자료들</a>
+        </span>
+            </div>
+
+        <div id="children4493170-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                                            <a id="plusminus6816406-0" class="plugin_pagetree_childtoggle icon icon-section-closed" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">
+            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+          
+        
+                    <span class="plugin_pagetree_children_span" id="childrenspan6816406-0">                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=6816406&amp;src=contextnavpagetreemode">세미나/컨퍼런스/학회</a>
+        </span>
+            </div>
+
+        <div id="children6816406-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                        </ul>
+                                        </div>
+    </li>
+                                        </ul>
+                                        </div>
+    </li>
+    </ul>
+</div>
+    </ul>
+
+    <fieldset class="hidden">
+        <input type="hidden" name="treeId" value="">
+        <input type="hidden" name="treeRequestId" value="/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=true">
+        <input type="hidden" name="treePageId" value="18711389">
+
+        <input type="hidden" name="noRoot" value="false">
+        <input type="hidden" name="rootPageId" value="4490336">
+
+        <input type="hidden" name="rootPage" value="">
+        <input type="hidden" name="startDepth" value="0">
+        <input type="hidden" name="spaceKey" value="AI">
+
+        <input type="hidden" name="i18n-pagetree.loading" value="Loading...">
+        <input type="hidden" name="i18n-pagetree.error.permission" value="Unable to load page tree. It seems that you do not have permission to view the root page.">
+        <input type="hidden" name="i18n-pagetree.eeror.general" value="There was a problem retrieving the page tree. Please check the server log file for more information.">
+        <input type="hidden" name="loginUrl" value="/login.action?os_destination=%2Fpages%2Fviewpage.action%3FpageId%3D18711389%26src%3Dcontextnavpagetreemode&amp;permissionViolation=true">
+        <input type="hidden" name="mobile" value="false">
+
+                <fieldset class="hidden">
+                                                <input type="hidden" name="ancestorId" value="5211377">
+                                    <input type="hidden" name="ancestorId" value="4492827">
+                                    <input type="hidden" name="ancestorId" value="4492743">
+                                    <input type="hidden" name="ancestorId" value="4490341">
+                                    <input type="hidden" name="ancestorId" value="4490336">
+                                    </fieldset>
+    </fieldset>
+</div>
+</div></div></div><div class="hidden"><a href="http://confluence.exem-oss.org/collector/pages.action?key=AI&amp;src=sidebar" id="space-pages-link" title=" (g , s)"></a><script type="text/x-template" title="logo-config-content"><h2>Space Details</h2><div class="personal-space-logo-hint">Your profile picture is used as the logo for your personal space. <a href="/users/profile/editmyprofilepicture.action" target="_blank">Change your profile picture</a>.</div></script></div></div><div class="space-tools-section"><div id="space-tools-menu-additional-items" class="hidden"><div data-label="Reorder pages" data-class="" data-href="/pages/reorderpages.action?key=AI">Reorder pages</div></div><button id="space-tools-menu-trigger" class=" aui-dropdown2-trigger aui-button aui-button-subtle tipsy-enabled" aria-controls="space-tools-menu" aria-haspopup="true" role="button" data-aui-trigger="" resolved="" aria-expanded="false" data-collapsed-tooltip="Space tools"><span class="aui-icon aui-icon-small aui-iconfont-configure">Configure</span><span class="aui-button-label">Space tools</span><span class="icon aui-icon-dropdown"></span></button><div id="space-tools-menu" class="aui-dropdown2 aui-style-default space-tools-dropdown aui-layer" role="menu" aria-hidden="true" data-aui-alignment="top left" resolved=""><div role="presentation" class="aui-dropdown2-section space-tools-navigation"><div role="group"><ul class="aui-list-truncate" role="presentation"><li role="presentation"><a role="menuitem" tabindex="-1" class="" href="http://confluence.exem-oss.org/spaces/viewspacesummary.action?key=AI&amp;src=spacetools">Overview</a></li><li role="presentation"><a role="menuitem" tabindex="-1" class="" href="http://confluence.exem-oss.org/pages/reorderpages.action?key=AI&amp;src=spacetools">Content Tools</a></li></ul></div></div><div role="presentation" class="aui-dropdown2-section space-operations"><div role="group"><ul class="aui-list-truncate" role="presentation"><li role="presentation"><a role="menuitem" tabindex="-1" class="" href="http://confluence.exem-oss.org/pages/reorderpages.action?key=AI&amp;src=spacetools">Reorder pages</a></li></ul></div></div></div><a class="expand-collapse-trigger" data-tooltip="Collapse sidebar ( [ )"></a></div>
+                    
+                        			<div class="ia-splitter-handle tipsy-enabled" data-tooltip="Collapse sidebar ( [ )" title=" ([)"><div class="ia-splitter-handle-highlight"></div></div></div>
+    		</div>
+        <!-- \#header -->
+
+            
+    
+        <div id="main" class=" aui-page-panel" style="margin-left: 400px;">
+                        <div id="main-header" class="" style="top: 41px; width: 958px;">
+                        
+    <div id="navigation" class="content-navigation view">
+                    <ul class="ajs-menu-bar">
+                                                                    <li class="ajs-button normal">
+
+        
+        
+                                            
+    
+    
+    <a id="editPageLink" href="http://confluence.exem-oss.org/pages/editpage.action?pageId=18711389" rel="nofollow" class="aui-button aui-button-subtle edit" accesskey="e" title="Edit (e)">
+                <span>
+                            <span class="aui-icon aui-icon-small aui-iconfont-edit"></span>
+                        <u>E</u>dit
+        </span>    </a>
+</li>
+                                            <li class="ajs-button normal">
+
+        
+            
+                                            
+    
+    
+    <a id="page-favourite" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" rel="nofollow" class="aui-button aui-button-subtle action-page-favourite" accesskey="f" title="Save for later (f)">
+                <span>
+                            <span class="aui-icon aui-icon-small aui-iconfont-unstar"></span>
+                        Save <u>f</u>or later
+        </span>    </a>
+</li>
+                                            <li class="ajs-button normal">
+
+        
+            
+                                            
+    
+    
+    <a id="watch-content-button" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" rel="nofollow" class="aui-button aui-button-subtle watch-menu watch-state-initialised" title="Stop watching (w)">
+                <span><span class="aui-icon aui-icon-small aui-iconfont-watch"></span> <u>W</u>atching</span>    </a>
+</li>
+                                            <li class="ajs-button normal">
+
+        
+            
+                                            
+    
+    
+    <a id="shareContentLink" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" rel="nofollow" class="aui-button aui-button-subtle share" title="Share this page with others (sor k)">
+                <span>
+                            <span class="aui-icon aui-icon-small aui-iconfont-share"></span>
+                        <u>S</u>hare
+        </span>    </a>
+</li>
+                    
+        <li class="normal ajs-menu-item">
+        <a id="action-menu-link" class="action aui-dropdown2-trigger-arrowless aui-button aui-button-subtle ajs-menu-title aui-dropdown2-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" aria-haspopup="true" data-container="#navigation" resolved="" aria-controls="action-menu" aria-expanded="false">
+            <span>
+                                    <span class="aui-icon aui-icon-small aui-iconfont-more"></span>
+                                
+            </span>
+        </a>         <div id="action-menu" class="aui-dropdown2 aui-style-default aui-layer most-right-menu-item" aria-hidden="true" resolved="">
+                            <div class="aui-dropdown2-section">
+                    <ul id="action-menu-primary" class="section-primary first">
+                                                    <li>
+
+    
+        
+                                            
+    
+    
+    <a id="view-attachments-link" href="http://confluence.exem-oss.org/pages/viewpageattachments.action?pageId=18711389" rel="nofollow" class="action-view-attachments" accesskey="t" title="View Attachments (t)">
+                <span>
+                        A<u>t</u>tachments (2)
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a id="action-view-history-link" href="http://confluence.exem-oss.org/pages/viewpreviousversions.action?pageId=18711389" rel="nofollow" class="action-view-history" title="">
+                <span>
+                        Page History
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a id="action-page-permissions-link" href="http://confluence.exem-oss.org/pages/viewinfo.action?pageId=18711389" rel="nofollow" class="action-page-permissions" title="Edit restrictions">
+                <span>
+                        Restrictions
+        </span>    </a>
+</li>
+                                        </ul>
+                </div>
+                            <div class="aui-dropdown2-section">
+                    <ul id="action-menu-secondary" class="section-secondary">
+                                                    <li>
+
+    
+        
+                                            
+    
+    
+    <a id="view-page-info-link" href="http://confluence.exem-oss.org/pages/viewinfo.action?pageId=18711389" rel="nofollow" class="action-view-info" title="">
+                <span>
+                        Page Information
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+            
+                                            
+    
+    
+    <a id="view-resolved-comments" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" rel="nofollow" class="" title="">
+                <span>Resolved comments (0)</span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a id="view-in-hierarchy-link" href="http://confluence.exem-oss.org/pages/reorderpages.action?key=AI&amp;openId=18711389#selectedPageInHierarchy" rel="nofollow" class="" title="">
+                <span>
+                        View in Hierarchy
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a id="action-source-editor-view-storage-link" href="http://confluence.exem-oss.org/plugins/viewstorage/viewpagestorage.action?pageId=18711389" rel="nofollow" class="action-view-storage view-storage-link popup-link" title="">
+                <span>
+                        View Storage Format
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a id="action-view-source-link" href="http://confluence.exem-oss.org/plugins/viewsource/viewpagesrc.action?pageId=18711389" rel="nofollow" class="action-view-source popup-link" title="">
+                <span>
+                        View Source
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a id="action-export-pdf-link" href="http://confluence.exem-oss.org/spaces/flyingpdf/pdfpageexport.action?pageId=18711389" rel="nofollow" class="" title="">
+                <span>
+                        Export to PDF
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a id="com-k15t-confluence-scroll-office-launcher" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389" rel="nofollow" class="" title="">
+                <span>
+                        Export to Word
+        </span>    </a>
+</li>
+                                                <li style="display: none;">
+
+    
+        
+                                            
+    
+    
+    <a id="action-export-word-link" href="http://confluence.exem-oss.org/exportword?pageId=18711389" rel="nofollow" class="action-export-word" title="">
+                <span>
+                        Export to Word
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a id="import-word-doc" href="http://confluence.exem-oss.org/pages/worddav/uploadimport.action?pageId=18711389" rel="nofollow" class="" title="">
+                <span>
+                        Import Word Document
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a href="http://confluence.exem-oss.org/plugins/lucidchart/selectVisio.action?contentId=18711389" rel="nofollow" class="" title="">
+                <span>
+                        View Visio File
+        </span>    </a>
+</li>
+                                        </ul>
+                </div>
+                            <div class="aui-dropdown2-section">
+                    <ul id="action-menu-modify" class="section-modify">
+                                                    <li>
+
+    
+        
+                                            
+    
+    
+    <a id="action-copy-page-link" href="http://confluence.exem-oss.org/pages/copypage.action?idOfPageToCopy=18711389&amp;spaceKey=AI" rel="nofollow" class="action-copy" title="">
+                <span>
+                        Copy
+        </span>    </a>
+</li>
+                                                <li>
+
+    
+        
+                                            
+    
+    
+    <a id="action-move-page-dialog-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389" rel="nofollow" class="action-move" title="">
+                <span>
+                        Move
+        </span>    </a>
+</li>
+                                        </ul>
+                </div>
+                    </div>
+    </li>
+            </ul>
+    </div>
+
+            
+            <div id="title-heading" class="pagetitle with-breadcrumbs">
+                
+                                    <div id="breadcrumb-section">
+                        
+    
+    
+    <ol id="breadcrumbs">
+                                        
+                        
+        <li class="first">
+                        
+                            <span class=""><a href="http://confluence.exem-oss.org/collector/pages.action?key=AI&amp;src=breadcrumbs-collector">Dashboard</a></span>
+                                                                                                            </li><li id="ellipsis" title="Show all breadcrumbs"><span><strong>…</strong></span></li>
+                                                
+                        
+        <li class="hidden-crumb">
+                        
+                            <span class=""><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4490336&amp;src=breadcrumbs-expanded">제조AI</a></span>
+                                                                                                    
+                        
+        </li><li class="hidden-crumb">
+                        
+                            <span class=""><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4490341&amp;src=breadcrumbs-expanded">제조AI 일반</a></span>
+                                                                                                    
+                        
+        </li><li class="hidden-crumb">
+                        
+                            <span class=""><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4492743&amp;src=breadcrumbs-expanded">지식 자료</a></span>
+                                                                                                    
+                        
+        </li><li class="hidden-crumb">
+                        
+                            <span class=""><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4492827&amp;src=breadcrumbs-expanded">기반 지식 리스트</a></span>
+                                                                                    
+                        
+        </li><li>
+                        
+                            <span class=""><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5211377&amp;src=breadcrumbs-parent">짧은 리뷰, 리딩, 메모</a></span>
+                                                                    </li></ol>
+
+
+                    </div>
+                
+                
+        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#page-banner-end" class="assistive">Skip to end of banner</a>
+<div id="page-banner-start" class="assistive"></div>
+
+                    
+            <div id="page-metadata-banner" style="visibility: visible;"><ul class="banner"><li id="system-content-items" class="noprint"><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389" title="Restrictions apply" id="content-metadata-page-restrictions" class="aui-icon aui-icon-small aui-iconfont-unlocked restricted"></a><a href="http://confluence.exem-oss.org/pages/viewpageattachments.action?pageId=18711389&amp;metadataLink=true" title="2 attachments" id="content-metadata-attachments" class="aui-icon aui-icon-small aui-iconfont-attachment"></a></li><li class="page-metadata-item noprint has-button" id="content-metadata-jira-wrapper"><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389" title="" id="content-metadata-jira" class="aui-button aui-button-subtle content-metadata-jira tipsy-disabled hidden"><span>JIRA links</span></a></li></ul></div>
+            
+
+<a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#page-banner-start" class="assistive">Go to start of banner</a>
+<div id="page-banner-end" class="assistive"></div>
+    
+
+                <h1 id="title-text" class="with-breadcrumbs" style="display: block;">
+                                                <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389">리뷰 - Memory Networks</a>
+                                    </h1>
+            </div>
+        </div><!-- \#main-header -->
+        
+        
+
+        <div id="sidebar-container">
+                                                </div><!-- \#sidebar-container -->
+
+        
+    
+
+        
+
+
+
+
+            
+    
+
+                                
+    
+
+    
+    
+        
+    
+    
+                    
+    
+
+    
+
+    
+            
+        
+
+    
+    
+
+    
+            
+        
+
+
+
+    
+<div id="content" class="page view">
+    
+
+
+<div id="action-messages">
+                        </div>
+
+
+
+            <script type="text/x-template" title="searchResultsGrid">
+    <table class="aui">
+        <thead>
+            <tr class="header">
+                <th class="search-result-title">Page Title</th>
+                <th class="search-result-space">Space</th>
+                <th class="search-result-date">Updated</th>
+            </tr>
+        </thead>
+    </table>
+</script>
+<script type="text/x-template" title="searchResultsGridCount">
+    <p class="search-result-count">{0}</p>
+</script>
+<script type="text/x-template" title="searchResultsGridRow">
+    <tr class="search-result">
+        <td class="search-result-title"><a href="{1}" class="content-type-{2}"><span>{0}</span></a></td>
+        <td class="search-result-space"><a class="space" href="/display/{4}/" title="{3}">{3}</a></td>
+        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
+    </tr>
+</script>
+        
+    
+            
+
+        
+                            
+    
+
+                    
+
+        
+        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#page-metadata-end" class="assistive">Skip to end of metadata</a>
+<div id="page-metadata-start" class="assistive"></div>
+
+    <div class="page-metadata">
+        <ul>
+            <li class="page-metadata-modification-info">
+                
+        
+    
+        
+    
+        
+            
+            Created by <span class="author">     <a href="http://confluence.exem-oss.org/display/~dhrim" class="url fn confluence-userlink userlink-0" data-username="dhrim" title="" data-user-hover-bound="true">임 도형</a></span>, last modified on <a class="last-modified" title="Show changes" href="http://confluence.exem-oss.org/pages/diffpagesbyversion.action?pageId=18711389&amp;selectedPageVersions=1&amp;selectedPageVersions=2">Apr 09, 2018</a>
+                </li>
+        </ul>
+    </div>
+
+
+<a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#page-metadata-start" class="assistive">Go to start of metadata</a>
+<div id="page-metadata-end" class="assistive"></div>
+
+        
+                                            
+        <div id="main-content" class="wiki-content">
+                           
+        <h1 id="id-리뷰-MemoryNetworks-개요">개요</h1><p>입력 인코딩(I), 메모리 업데이트(G), 출력 찾기(O), 출력 인코딩(R)로 구조로 구성된 시스템이 제안.</p><p>실험으로는 일반 영문을 사용하여, 질문에 대한 답변을 하였다.</p><p><br></p><p>이러한 구조를 가지고 일반적인 문제를 해결할 수 있음을 보임.</p><p><br></p><p>이전 Neural Turing Machin에 이은 논문이며,&nbsp;</p><p>이후 같은 저자가 이를 보완한 하지만 완전 다른 구조의 End-To-End Memory Networks를 제안함.</p><p>하지만&nbsp; DeepMind의 Differential Neural Computers에 눌렸다.&nbsp;</p><p><br></p><h1 id="id-리뷰-MemoryNetworks-논문의미">논문 의미</h1><p>아주 간단한 구조의, 하지만 메모리를 사용하는 구조로 일반 문제를 해결할 수 있다.</p><p>그 간단한 Turing Machine이 일반 문제를 해결할 수 있다는 것에 버금갈 정도의 강한 임팩트이다.</p><p><br></p><h1 id="id-리뷰-MemoryNetworks-시스템구조">시스템 구조</h1><p><br></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image confluence-content-image-border" height="250" width="558" src="./Review_Memory_networks_files/image2018-4-9_10-57-22.png" data-image-src="/download/attachments/18711389/image2018-4-9_10-57-22.png?version=1&amp;modificationDate=1523245650000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="18711356" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2018-4-9_10-57-22.png" data-base-url="http://confluence.exem-oss.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="18711389" data-linked-resource-container-version="2"></span></p><p>전체 시스템은 I, G, O, R의 네트웤으로 구성</p><ul><li>I : feature = I(x). 입력을 인코딩</li><li>G : mi = G(mi, I(x), m). 메모리 번지를 업데이트</li><li>O : o = O(I(x), m). 입력과 메모리를 가지고 출력을 찾아냄</li><li>R : R(o) -&gt; r. 출력을 디코딩</li></ul><p><br></p><p>각 네트웤을 학습시킬 수 있다.</p><p>각 네트웤은 NN이 아니어도 된다.</p><p><br></p><h1 id="id-리뷰-MemoryNetworks-실험데이타">실험 데이타</h1><p>일반 영문.</p><div class="code panel pdl conf-macro output-block" data-hasbody="true" data-macro-name="code" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<div><div id="highlighter_116051" class="syntaxhighlighter sh-confluence nogutter  java"><div class="toolbar"><span><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container" title="Hint: double-click to select code"><div class="line number1 index0 alt2"><code class="java plain">Joe went to the kitchen. </code></div><div class="line number2 index1 alt1"><code class="java plain">Fred went to the kitchen. </code></div><div class="line number3 index2 alt2"><code class="java plain">Joe picked up the milk.</code></div><div class="line number4 index3 alt1"><code class="java plain">Joe travelled to the office. </code></div><div class="line number5 index4 alt2"><code class="java plain">Joe left the milk. </code></div><div class="line number6 index5 alt1"><code class="java plain">Joe went to the bathroom.</code></div><div class="line number7 index6 alt2"><code class="java plain">Where is the milk now? A: office</code></div><div class="line number8 index7 alt1"><code class="java plain">Where is Joe? A: bathroom</code></div><div class="line number9 index8 alt2"><code class="java plain">Where was Joe before the office? A: kitchen</code></div></div></td></tr></tbody></table></div></div>
+</div></div><p><br></p><p>답변이 앞의 문장 하나로 구할 수 없다.</p><p>몇개의 문장을 기억(memory, 저장소)에서 구해야 한다.</p><p><br></p><p><br></p><h1 id="id-리뷰-MemoryNetworks-학습을위한lossfunction">학습을 위한 loss function</h1><p><br></p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" height="126" src="./Review_Memory_networks_files/image2018-4-9_12-24-14.png" data-image-src="/download/attachments/18711389/image2018-4-9_12-24-14.png?version=1&amp;modificationDate=1523245650000&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="18711380" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2018-4-9_12-24-14.png" data-base-url="http://confluence.exem-oss.org" data-linked-resource-content-type="image/png" data-linked-resource-container-id="18711389" data-linked-resource-container-version="2"></span></p><p>S( )는 적합성. So( )는 O의 출력에 대한. Sr( )은 디코딩된것에 대한.&nbsp;</p><p>1개의 입력 x에 대하여 2개의 메모리 번지의 내용 mo1, mo2를 찾는다.</p><p>mo1, mo2는 선택된 메모리의 내용.&nbsp; So(x,mo1)은 입력 x에 대하여 선태된 mo1의 적합성.</p><p><br></p><p>항목 중 bar가 붙은 것은 오정답인 경우.&nbsp;</p><p>첫 항목은 입력(x)과 찾아낸 기억 내용(mo1)과의 적합성</p><p>두번째 항목은 이전 결과([x, mo1])과 찾아낸 두번째 기억 내용( mo2)과의 적합성</p><p>서번째 항목은 찾아낸 결과([x, mo1, mo2])와 인코딩된 출력(r)과 의 적합성</p><p><br></p><p>요약하면 입력(x)이 들어왔을 때 출력(r)을 내기위한 기억 2개(mo1, mo2)를 찾는다. 그리고 이를 가지고 출력을 찾고, 이를 잘 디코딩하는가이다.</p><p><br></p><p><br></p><h1 id="id-리뷰-MemoryNetworks-Reference">Reference</h1><ul><li>논문,&nbsp;Memory Networks :&nbsp;<a class="external-link" href="https://arxiv.org/abs/1410.3916" rel="nofollow">https://arxiv.org/abs/1410.3916</a></li><li>short review :&nbsp;<a class="external-link" href="https://blog.acolyer.org/2016/03/10/memory-networks/" rel="nofollow">https://blog.acolyer.org/2016/03/10/memory-networks/</a><br><br></li><li>End-To-End Memory Networks :&nbsp;<a class="external-link" href="https://arxiv.org/abs/1503.08895" rel="nofollow">https://arxiv.org/abs/1503.08895</a><br><br></li><li>Neural Turing Machine :&nbsp;<a class="external-link" href="https://arxiv.org/abs/1410.5401" rel="nofollow">https://arxiv.org/abs/1410.5401</a></li><li>Neurla Turing Machine 해설 :&nbsp;<a class="external-link" href="https://norman3.github.io/papers/docs/neural_turing_machine.html" rel="nofollow">https://norman3.github.io/papers/docs/neural_turing_machine.html</a></li></ul>
+
+                
+        
+    
+        </div>
+
+        <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+         <rdf:Description
+    rdf:about="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389"
+    dc:identifier="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389"
+    dc:title="리뷰 - Memory Networks"
+    trackback:ping="http://confluence.exem-oss.org/rpc/trackback/18711389"/>
+</rdf:RDF>
+-->
+
+                        
+    
+
+
+
+<div id="likes-and-labels-container"><div id="likes-section" class="no-print"><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389" class="like-button"><span class="aui-icon aui-icon-small aui-iconfont-like"></span><span class="like-button-text">Like</span></a><span class="like-summary">Be the first to like this</span></div><div id="labels-section" class="pageSection group">
+    <div class="labels-section-content content-column" entityid="18711389" entitytype="page">
+	<div class="labels-content">
+		
+    <ul class="label-list label-list-right  has-pen">
+            <li class="no-labels-message">
+            No labels
+        </li>
+                <li class="labels-edit-container">
+            <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="show-labels-editor" title="Edit Labels (l)">
+                <span class="aui-icon aui-icon-small aui-iconfont-edit-small">Edit Labels</span>
+            </a>
+        </li>
+        </ul>
+
+    </div>
+</div>
+</div></div>
+        
+		
+            
+
+
+
+
+            
+        
+
+
+
+
+
+
+
+
+                        
+    
+<div id="comments-section" class="pageSection group">
+        
+    
+
+
+    <div class="bottom-comment-panels comment-panels">
+                
+                    
+    
+
+
+        
+        
+    
+    <div class="quick-comment-container comment add"><p class="comment-user-logo"><a class="userLogoLink userlink-0" data-username="dhrim" href="http://confluence.exem-oss.org/display/~dhrim" title="" data-user-hover-bound="true"><img class="userLogo logo" src="./Review_Memory_networks_files/user-avatar" alt="User icon: dhrim" title=""></a></p><div class="quick-comment-body"><div class="quick-comment-loading-container" style="display:none;"></div><div id="editor-messages"></div><div id="all-messages"></div><form style="display:block;" class="quick-comment-form aui" method="post" name="inlinecommentform" action="http://confluence.exem-oss.org/pages/doaddcomment.action?pageId=18711389"><div title="Add a Comment (m)" class="quick-comment-prompt"><span>Write a comment…</span></div></form></div></div>
+
+            </div>
+
+            <div id="comments-actions" class="aui-toolbar noprint" style="display: none;">
+            <p class="toolbar-group">
+                <span class="toolbar-item"><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389&amp;showComments=true&amp;showCommentArea=true#addcomment" id="add-comment-rte" accesskey="m" class="toolbar-trigger">Add Comment</a></span>
+            </p>
+        </div>
+    </div>
+        
+
+
+                
+    
+            
+</div>
+
+    
+
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+
+
+    
+<div id="space-tools-web-items" class="hidden">
+                <div data-label="Overview" data-href="/spaces/viewspacesummary.action?key=AI">Overview</div>
+            <div data-label="Content Tools" data-href="/pages/reorderpages.action?key=AI">Content Tools</div>
+    </div>
+        
+
+
+
+            </div><!-- \#main -->
+            
+    
+    
+        
+            
+            
+
+<div id="footer" role="contentinfo" style="margin-left: 400px;">
+    <section class="footer-body">
+
+                                                            <p class="license license-opensource">
+                    Powered by a free <b>Atlassian Confluence Open Source Project License</b> granted to Flamingo. <a href="http://www.atlassian.com/c/conf/11461">Evaluate Confluence today</a>.<br>
+                </p>
+                    
+        
+
+        
+        <div class="gliffy-webpanel-footer"><span>This Confluence installation runs a Free Gliffy License - Evaluate the <a href="http://www.gliffy.com/products/confluence-plugin/">Gliffy Confluence Plugin</a> for your Wiki!</span></div>
+<ul id="poweredby">
+            <li class="noprint">Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link" rel="nofollow">Atlassian Confluence</a> <span id="footer-build-information">6.2.2</span></li>
+            <li class="print-only">Printed by Atlassian Confluence 6.2.2</li>
+            <li class="noprint"><a href="https://support.atlassian.com/help/confluence" class="hover-footer-link" rel="nofollow">Report a bug</a></li>
+            <li class="noprint"><a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link" rel="nofollow">Atlassian News</a></li>
+        </ul>
+
+        
+
+        <div id="footer-logo"><a href="http://www.atlassian.com/" rel="nofollow">Atlassian</a></div>
+
+                    
+        
+    </section>
+</div>
+
+    
+</div>
+
+</div><!-- \#full-height-container -->
+</div><!-- \#page -->
+
+    <span style="display:none;" id="confluence-server-performance">{"serverDuration": 219, "requestCorrelationId": "993b3c2972443586"}</span>
+
+
+<script type="text/javascript">
+    AJS.BigPipe = AJS.BigPipe || {};
+    AJS.BigPipe.metrics = AJS.BigPipe.metrics || {};
+    AJS.BigPipe.metrics.pageEnd = typeof window.performance !== "undefined" && typeof window.performance.now === "function"
+                                    ? Math.ceil(window.performance.now()) : 0;
+    AJS.BigPipe.metrics.isBigPipeEnabled = 'false' === 'true';
+</script>
+
+
+    
+<div id="editor-preload-container" style="display: none;">
+ 
+
+<div class="hidden">
+        
+
+
+<content tag="breadcrumbs">
+    
+    
+    <ol id="quickedit-breadcrumbs">
+                                        
+                        
+        <li class="first">
+                        
+                            <span class=""><a href="http://confluence.exem-oss.org/display/AI" target="_blank">AI</a></span>
+                                                                                    
+                        
+        </li><li>
+                        
+                            <span class=""><a href="http://confluence.exem-oss.org/collector/pages.action?key=AI" target="_blank">Dashboard</a></span>
+                                                                                                            </li><li id="ellipsis" title="Show all breadcrumbs"><span><strong>…</strong></span></li>
+                                                
+                        
+        <li class="hidden-crumb">
+                        
+                            <span class=""><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4490336" target="_blank">제조AI</a></span>
+                                                                                                    
+                        
+        </li><li class="hidden-crumb">
+                        
+                            <span class=""><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4490341" target="_blank">제조AI 일반</a></span>
+                                                                                                    
+                        
+        </li><li class="hidden-crumb">
+                        
+                            <span class=""><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4492743" target="_blank">지식 자료</a></span>
+                                                                                                    
+                        
+        </li><li class="hidden-crumb">
+                        
+                            <span class=""><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=4492827" target="_blank">기반 지식 리스트</a></span>
+                                                                                    
+                        
+        </li><li>
+                        
+                            <span class=""><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=5211377" target="_blank">짧은 리뷰, 리딩, 메모</a></span>
+                                                                                    
+                        
+        </li><li>
+                        
+                            <span class="edited-page-title"><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389" target="_blank">리뷰 - Memory Networks</a></span>
+                                                                    </li></ol>
+
+</content>
+</div>
+
+
+        
+    
+
+                                                                                        
+
+<script type="text/x-template" title="editor-css" id="editor-css-resources">
+    <link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/2.0.8/_/download/batch/com.atlassian.confluence.plugins.confluence-collaborative-editor-plugin:confluence-collaborative-editor-plugin-editor-content-resources/com.atlassian.confluence.plugins.confluence-collaborative-editor-plugin:confluence-collaborative-editor-plugin-editor-content-resources.css" data-wrm-key="com.atlassian.confluence.plugins.confluence-collaborative-editor-plugin:confluence-collaborative-editor-plugin-editor-content-resources" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d31cd7d2fde86846818b7c61a667b08c-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/6.0.6/_/download/batch/com.atlassian.auiplugin:aui-page-typography/com.atlassian.auiplugin:aui-page-typography.css" data-wrm-key="com.atlassian.auiplugin:aui-page-typography" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d31cd7d2fde86846818b7c61a667b08c-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/6.0.6/_/download/batch/com.atlassian.auiplugin:aui-avatars/com.atlassian.auiplugin:aui-avatars.css" data-wrm-key="com.atlassian.auiplugin:aui-avatars" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/5fb89cff7cdb4d326688653fc11d5658-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/6.0.6/_/download/batch/com.atlassian.auiplugin:aui-page-layout/com.atlassian.auiplugin:aui-page-layout.css" data-wrm-key="com.atlassian.auiplugin:aui-page-layout" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/3e7e96fad5e237fb2d5a081c6cb11212-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/6.2.2/_/download/batch/com.atlassian.confluence.editor:editor-content-styles/com.atlassian.confluence.editor:editor-content-styles.css" data-wrm-key="com.atlassian.confluence.editor:editor-content-styles" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/3e7e96fad5e237fb2d5a081c6cb11212-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/6.2.2/_/download/batch/com.atlassian.confluence.editor:table-resizable-editor-content-styles/com.atlassian.confluence.editor:table-resizable-editor-content-styles.css?confluence.table.resizable=true" data-wrm-key="com.atlassian.confluence.editor:table-resizable-editor-content-styles" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/3e7e96fad5e237fb2d5a081c6cb11212-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/6.2.2/_/download/batch/com.atlassian.confluence.editor:table-resizable-styles/com.atlassian.confluence.editor:table-resizable-styles.css?confluence.table.resizable=true" data-wrm-key="com.atlassian.confluence.editor:table-resizable-styles" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/6.2.2/_/download/batch/com.atlassian.confluence.plugins.confluence-templates:variable-editor-content-styles/com.atlassian.confluence.plugins.confluence-templates:variable-editor-content-styles.css" data-wrm-key="com.atlassian.confluence.plugins.confluence-templates:variable-editor-content-styles" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d31cd7d2fde86846818b7c61a667b08c-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/6.0.6/_/download/batch/com.atlassian.auiplugin:aui-lozenge/com.atlassian.auiplugin:aui-lozenge.css" data-wrm-key="com.atlassian.auiplugin:aui-lozenge" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/2.20/_/download/batch/com.atlassian.confluence.plugins.status-macro:view_content_status/com.atlassian.confluence.plugins.status-macro:view_content_status.css" data-wrm-key="com.atlassian.confluence.plugins.status-macro:view_content_status" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/ae5eaca555363ae3b2310da4ae3794de-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/2.20/_/download/batch/com.atlassian.confluence.plugins.status-macro:editor_content_status/com.atlassian.confluence.plugins.status-macro:editor_content_status.css" data-wrm-key="com.atlassian.confluence.plugins.status-macro:editor_content_status" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d0638b94054c44b2ca8199723136b528-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/1.2.8/_/download/batch/com.atlassian.confluence.plugins.confluence-fixed-headers:confluence-fixed-headers-editor-content-resources/com.atlassian.confluence.plugins.confluence-fixed-headers:confluence-fixed-headers-editor-content-resources.css?confluence.view.edit.transition=true" data-wrm-key="com.atlassian.confluence.plugins.confluence-fixed-headers:confluence-fixed-headers-editor-content-resources" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/19bbdecfa6ce3c33e1aa42dc000a8eb4-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/5.0.1/_/download/batch/confluence.extra.attachments:attachments-css/confluence.extra.attachments:attachments-css.css" data-wrm-key="confluence.extra.attachments:attachments-css" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/3.5.8/_/download/batch/com.tensixtwo.conf.latexmath:styles/com.tensixtwo.conf.latexmath:styles.css" data-wrm-key="com.tensixtwo.conf.latexmath:styles" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/3.5.8/_/download/batch/com.tensixtwo.conf.latexmath:editor_content_latexmath/com.tensixtwo.conf.latexmath:editor_content_latexmath.css" data-wrm-key="com.tensixtwo.conf.latexmath:editor_content_latexmath" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/14.1.1/_/download/batch/com.atlassian.confluence.plugins.confluence-roadmap-plugin:roadmap-placeholder-css/com.atlassian.confluence.plugins.confluence-roadmap-plugin:roadmap-placeholder-css.css" data-wrm-key="com.atlassian.confluence.plugins.confluence-roadmap-plugin:roadmap-placeholder-css" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/1.0/_/download/batch/confluence.web.resources:panel-styles/confluence.web.resources:panel-styles.css" data-wrm-key="confluence.web.resources:panel-styles" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d5daae2c36aff2998834cb5113a229b3-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/1.0/_/download/batch/confluence.web.resources:content-styles/confluence.web.resources:content-styles.css" data-wrm-key="confluence.web.resources:content-styles" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/1.22.5/_/download/batch/com.lucidchart.confluence.plugins.lucid-confluence:lucidchart-editor-resources/com.lucidchart.confluence.plugins.lucid-confluence:lucidchart-editor-resources.css" data-wrm-key="com.lucidchart.confluence.plugins.lucid-confluence:lucidchart-editor-resources" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/6.2.2/_/download/batch/com.atlassian.confluence.plugins.confluence-page-layout:editor-pagelayout-content-styles/com.atlassian.confluence.plugins.confluence-page-layout:editor-pagelayout-content-styles.css" data-wrm-key="com.atlassian.confluence.plugins.confluence-page-layout:editor-pagelayout-content-styles" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/5.0.1/_/download/batch/com.atlassian.confluence.plugins.confluence-business-blueprints:sharelinks-urlmacro-editor-resources/com.atlassian.confluence.plugins.confluence-business-blueprints:sharelinks-urlmacro-editor-resources.css" data-wrm-key="com.atlassian.confluence.plugins.confluence-business-blueprints:sharelinks-urlmacro-editor-resources" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/7.1.13/_/download/batch/com.atlassian.confluence.plugins.confluence-inline-tasks:inline-tasks-styles/com.atlassian.confluence.plugins.confluence-inline-tasks:inline-tasks-styles.css" data-wrm-key="com.atlassian.confluence.plugins.confluence-inline-tasks:inline-tasks-styles" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/7.1.13/_/download/batch/com.atlassian.confluence.plugins.confluence-inline-tasks:editor-autocomplete-date-css/com.atlassian.confluence.plugins.confluence-inline-tasks:editor-autocomplete-date-css.css" data-wrm-key="com.atlassian.confluence.plugins.confluence-inline-tasks:editor-autocomplete-date-css" data-wrm-batch-type="resource" media="all">
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/7.1.13/_/download/batch/com.atlassian.confluence.plugins.confluence-inline-tasks:editor-autocomplete-date-css/com.atlassian.confluence.plugins.confluence-inline-tasks:editor-autocomplete-date-css.css?conditionalComment=lte+IE+9" data-wrm-key="com.atlassian.confluence.plugins.confluence-inline-tasks:editor-autocomplete-date-css" data-wrm-batch-type="resource" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/9904a304e0e1fcece251d588e573fd06-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/2.0.4/_/download/batch/com.atlassian.confluence.plugins.confluence-view-file-macro:view-file-macro-editor-content-resources/com.atlassian.confluence.plugins.confluence-view-file-macro:view-file-macro-editor-content-resources.css" data-wrm-key="com.atlassian.confluence.plugins.confluence-view-file-macro:view-file-macro-editor-content-resources" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/d41d8cd98f00b204e9800998ecf8427e-CDN/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/4.0.2/_/download/batch/com.atlassian.confluence.plugins.confluence-software-blueprints:common-resources/com.atlassian.confluence.plugins.confluence-software-blueprints:common-resources.css" data-wrm-key="com.atlassian.confluence.plugins.confluence-software-blueprints:common-resources" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/11/_/styles/custom.css" media="all">
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+<div class="editor-container">
+
+        
+            
+
+<div id="link-browser-tab-items" class="hidden">
+                <div title="Search" data-weight="10">search</div>
+            <div title="Recently viewed" data-weight="20">recentlyviewed</div>
+            <div title="Files" data-weight="30">attachments</div>
+            <div title="Web link" data-weight="40">weblink</div>
+            <div title="Advanced" data-weight="50">advanced</div>
+    </div>
+            <div id="image-properties-tab-items" class="hidden">
+                <div title="Effects" data-weight="10">image-effects</div>
+            <div title="Title" data-weight="20">image-attributes</div>
+    </div>
+            
+
+ 
+
+
+
+
+
+
+
+
+
+
+        <div id="toolbar">
+        <div id="rte-toolbar" class="aui-toolbar aui-toolbar2">
+
+            <div class="aui-toolbar2-primary toolbar-primary">
+                <ul class="aui-buttons rte-toolbar-group-formatting">
+                                        <li id="format-dropdown" class="toolbar-item toolbar-dropdown">
+                        <div class="aui-dd-parent">
+                            <a id="format-dropdown-display" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="toolbar-trigger aui-dd-trigger aui-button" data-control-id="formatselect">
+                                <span class="dropdown-text">Paragraph</span>
+                                    
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-dropdown "></span>
+                            </a>
+                            <ul id="format-dropdown-display-menu" class="aui-dropdown hidden">
+                                    <li class="dropdown-item format-p" data-format="p" data-tooltip="Paragraph (Ctrl+0)">
+        <a class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">Paragraph</a>
+    </li>
+                                    <li class="dropdown-item format-h1" data-format="h1" data-tooltip="Heading 1 (Ctrl+1)">
+        <a class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">Heading 1</a>
+    </li>
+                                    <li class="dropdown-item format-h2" data-format="h2" data-tooltip="Heading 2 (Ctrl+2)">
+        <a class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">Heading 2</a>
+    </li>
+                                    <li class="dropdown-item format-h3" data-format="h3" data-tooltip="Heading 3 (Ctrl+3)">
+        <a class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">Heading 3</a>
+    </li>
+                                    <li class="dropdown-item format-h4" data-format="h4" data-tooltip="Heading 4 (Ctrl+4)">
+        <a class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">Heading 4</a>
+    </li>
+                                    <li class="dropdown-item format-h5" data-format="h5" data-tooltip="Heading 5 (Ctrl+5)">
+        <a class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">Heading 5</a>
+    </li>
+                                    <li class="dropdown-item format-h6" data-format="h6" data-tooltip="Heading 6 (Ctrl+6)">
+        <a class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">Heading 6</a>
+    </li>
+                                    <li class="dropdown-item format-pre" data-format="pre" data-tooltip="Preformatted (Ctrl+7)">
+        <a class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">Preformatted</a>
+    </li>
+                                    <li class="dropdown-item format-blockquote" data-format="blockquote" data-tooltip="Quote (Ctrl+8)">
+        <a class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">Quote</a>
+    </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="aui-buttons rte-toolbar-group-style">
+                    
+                <li class="toolbar-item aui-button" id="rte-button-bold" data-tooltip="Bold (Ctrl+B)">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="bold">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-bold ">Bold</span>
+        </a>
+    </li>
+                    
+                <li class="toolbar-item aui-button" id="rte-button-italic" data-tooltip="Italic (Ctrl+I)">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="italic">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-italic ">Italic</span>
+        </a>
+    </li>
+                    
+                <li class="toolbar-item aui-button" id="rte-button-underline" data-tooltip="Underline (Ctrl+U)">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="underline">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-underline ">Underline</span>
+        </a>
+    </li>
+                                        <li id="color-picker-control" class="toolbar-item toolbar-splitbutton">
+                        <a class="toolbar-trigger aui-button" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" id="rte-button-color" data-color="003366" data-tooltip="Color"><span class="icon aui-icon aui-icon-small aui-iconfont-editor-color ">Color picker</span><span class="selected-color"></span></a><div class="aui-dd-parent"><a class="toolbar-trigger aui-dd-trigger aui-button" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" id="rte-button-color-selector" data-control-id="colorSelector" data-tooltip="More colors"><span class="icon aui-icon aui-icon-small aui-iconfont-dropdown ">More colors</span></a><div class="color-picker-container"><div class="color-picker aui-dropdown hidden"><ul><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #000000" data-color="000000">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #993300" data-color="993300">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #333300" data-color="333300">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #003300" data-color="003300">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #003366" data-color="003366">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #000080" data-color="000080">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #333399" data-color="333399">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #333333" data-color="333333">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #800000" data-color="800000">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #FF6600" data-color="FF6600">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #808000" data-color="808000">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #008000" data-color="008000">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #008080" data-color="008080">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #0000FF" data-color="0000FF">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #666699" data-color="666699">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #808080" data-color="808080">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #FF0000" data-color="FF0000">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #FF9900" data-color="FF9900">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #99CC00" data-color="99CC00">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #339966" data-color="339966">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #33CCCC" data-color="33CCCC">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #3366FF" data-color="3366FF">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #800080" data-color="800080">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #999999" data-color="999999">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #FF00FF" data-color="FF00FF">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #FFCC00" data-color="FFCC00">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #FFFF00" data-color="FFFF00">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #00FF00" data-color="00FF00">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #00FFFF" data-color="00FFFF">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #00CCFF" data-color="00CCFF">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #993366" data-color="993366">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #C0C0C0" data-color="C0C0C0">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #FF99CC" data-color="FF99CC">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #FFCC99" data-color="FFCC99">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #FFFF99" data-color="FFFF99">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #CCFFCC" data-color="CCFFCC">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #CCFFFF" data-color="CCFFFF">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #99CCFF" data-color="99CCFF">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #CC99FF" data-color="CC99FF">&nbsp;</a></li><li><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" style="background-color: #FFFFFF" data-color="FFFFFF">&nbsp;</a></li></ul></div></div></div>
+                    </li>
+                    <li id="more-menu" class="toolbar-item toolbar-dropdown">
+                        <div class="aui-dd-parent">
+                            <a id="rte-button-more" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="toolbar-trigger aui-dd-trigger aui-button" data-tooltip="More">
+                                    
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-styles ">Formatting</span>
+                                    
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-dropdown "></span>
+                            </a>
+                            <div id="rte-button-more-menu" class="aui-dropdown grouped hidden">
+                                <div class="grouped-dropdown-item">
+                                    <ul>
+                                                                <li class="dropdown-item more-menu-trigger" data-control-id="strikethrough" data-tooltip="Strikethrough (Ctrl+Shift+S)">
+        <a id="rte-strikethrough" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-check hidden"></span>
+Strikethrough
+        </a>
+    </li>
+                                                                 <li class="dropdown-item more-menu-trigger" data-control-id="sub" data-tooltip="">
+        <a id="rte-sub" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-check hidden"></span>
+Subscript
+        </a>
+    </li>
+                                                                 <li class="dropdown-item more-menu-trigger" data-control-id="sup" data-tooltip="">
+        <a id="rte-sup" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-check hidden"></span>
+Superscript
+        </a>
+    </li>
+                                                        <li class="dropdown-item more-menu-trigger" data-control-id="monospace" data-tooltip="Format text with monospaced font">
+        <a id="rte-monospace" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-check hidden"></span>
+Monospace
+        </a>
+    </li>
+
+                                                                                                                    </ul>
+                                </div>
+                                <div class="grouped-dropdown-item">
+                                    <ul>
+                                            <li class="dropdown-item more-menu-trigger no-icon" data-format="removeformat" data-tooltip="Clears formatting on currently selected text">
+        <a id="rte-removeformat" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+            Clear formatting
+        </a>
+    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+
+                <ul class="aui-buttons rte-toolbar-group-lists">
+                    
+                <li class="toolbar-item aui-button" id="rte-button-bullist" data-tooltip="Bullet list (Ctrl+Shift+B)">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="bullist">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-list-bullet ">Bullet list</span>
+        </a>
+    </li>
+                    
+                <li class="toolbar-item aui-button" id="rte-button-numlist" data-tooltip="Numbered list (Ctrl+Shift+N)">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="numlist">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-list-number ">Numbered list</span>
+        </a>
+    </li>
+                </ul>
+                                <ul class="aui-buttons rte-toolbar-group-task-lists">
+                    
+                <li class="toolbar-item aui-button" id="rte-button-tasklist" data-tooltip="Task list ([ then ])">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="tasklist">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-task ">Task list</span>
+        </a>
+    </li>
+                </ul>
+                
+                <ul class="aui-buttons rte-toolbar-group-indentation">
+                    
+                <li class="toolbar-item aui-button" id="rte-button-outdent" data-tooltip="Outdent">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="outdent">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-outdent ">Outdent</span>
+        </a>
+    </li>
+                    
+                <li class="toolbar-item aui-button" id="rte-button-indent" data-tooltip="Indent">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="indent">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-indent ">Indent</span>
+        </a>
+    </li>
+                </ul>
+
+                <ul class="aui-buttons rte-toolbar-group-justification">
+                    
+                <li class="toolbar-item aui-button" id="rte-button-justifyleft" data-tooltip="Align left">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="justifyleft">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-align-left ">Align left</span>
+        </a>
+    </li>
+                    
+                <li class="toolbar-item aui-button" id="rte-button-justifycenter" data-tooltip="Align center">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="justifycenter">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-align-center ">Align center</span>
+        </a>
+    </li>
+                    
+                <li class="toolbar-item aui-button" id="rte-button-justifyright" data-tooltip="Align right">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="justifyright">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-align-right ">Align right</span>
+        </a>
+    </li>
+                </ul>
+
+                                <ul class="aui-buttons hidden" id="page-layout-2-group">
+                    <li id="page-layout-2" class="toolbar-item" data-tooltip="Page layout">
+                        <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="aui-button toolbar-trigger" id="rte-button-pagelayout-2">
+                                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-layout ">Page layout</span>
+                        </a>
+                    </li>
+                </ul>
+                
+
+                <ul class="aui-buttons rte-toolbar-group-files hidden"></ul>
+
+                <ul class="aui-buttons rte-toolbar-group-link no-separator">
+                    <li class="toolbar-item" data-tooltip="Insert link (Ctrl+K)">
+                        <a id="rte-button-link" class="toolbar-trigger aui-button" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="linkbrowserButton">
+                                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-link "></span>
+                            <span class="trigger-text">Link</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="aui-buttons rte-toolbar-group-table no-separator">
+                    <li class="toolbar-item toolbar-dropdown" id="insert-table-dropdown">
+                        <div class="aui-dd-parent">
+                            <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="toolbar-trigger aui-dd-trigger aui-button" id="rte-button-insert-table" data-tooltip="Insert table">
+                                    
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-table "></span>
+                                <span class="dropdown-text">Table</span>
+                                    
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-dropdown "></span>
+                            </a>
+
+                            <div id="table-picker-container" class="hidden aui-box-shadow">
+                                <div class="table-picker-box" data-tooltip="Hold SHIFT for a table without a heading.">
+                                    <div class="table-picker-background">
+                                        <div class="picker picker-cell"></div>
+                                        <div class="picker picker-heading heading"></div>
+                                        <div class="picker picker-selected-cell"></div>
+                                        <div class="picker picker-selected-heading heading"></div>
+                                    </div>
+                                    <p class="desc"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                                                                
+                
+                <ul class="aui-buttons rte-toolbar-group-insert no-separator">
+                    <li class="toolbar-item toolbar-dropdown" id="insert-menu">
+                        <div class="aui-dd-parent">
+                            <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="toolbar-trigger aui-dd-trigger aui-button" id="rte-button-insert" data-tooltip="Insert more content">
+                                    
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-add "></span>
+                                <span class="dropdown-text">Insert</span>
+                                    
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-dropdown "></span>
+                            </a>
+
+                            <div id="insert-menu-options" class="aui-dropdown grouped hidden">
+                                <div class="grouped-dropdown-item">
+                                    <span class="assistive">Insert content</span>
+                                    <ul id="content-insert-list">
+                                        
+        
+        <li class="dropdown-item content-image" data-command="mceConfimage" data-tooltip="Insert files and images (Ctrl+M)">
+        <a id="rte-insert-image" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Files and images
+        </a>
+    </li>
+                                        
+        
+        <li class="dropdown-item content-link" data-control-id="linkbrowserButton" data-tooltip="Insert link (Ctrl+K)">
+        <a id="rte-insert-link" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Link
+        </a>
+    </li>
+                                        
+    
+        <li class="dropdown-item content-symbol" data-command="confCharmap" data-tooltip="Insert symbol">
+        <a id="rte-insert-symbol" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Symbol
+        </a>
+    </li>
+                                        
+    
+        <li class="dropdown-item content-emoticon" data-command="mceEmotion" data-tooltip="Insert emoticon">
+        <a id="rte-insert-emoticon" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Emoticon
+        </a>
+    </li>
+                                        
+        
+        <li class="dropdown-item content-wikimarkup" data-command="InsertWikiMarkup" data-tooltip="Insert markup (Ctrl+Shift+D)">
+        <a id="rte-insert-wikimarkup" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Markup
+        </a>
+    </li>
+                                        
+    
+        <li class="dropdown-item content-hr" data-command="InsertHorizontalRule" data-tooltip="Insert horizontal rule (----)">
+        <a id="rte-insert-hr" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Horizontal rule
+        </a>
+    </li>
+                                                                                    
+        
+        <li class="dropdown-item content-tasklist" data-command="InsertInlineTaskListNoToggle" data-tooltip="Insert task list ([ then ])">
+        <a id="rte-insert-tasklist" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Task list
+        </a>
+    </li>
+                                                                            </ul>
+                                </div>
+                                <div class="grouped-dropdown-item">
+                                    <span class="assistive">Insert macro</span>
+                                    <ul id="macro-insert-list">
+                                                                                                                                                                                <li class="dropdown-item macro-evernote-insert-link" data-macro-name="evernote-insert-link" data-tooltip="Insert &#39;Evernote&#39; macro">
+        <a id="evernote-insert-link" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Evernote
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-createlydiagram" data-macro-name="createlydiagram" data-tooltip="Insert &#39;Creately Diagram&#39; macro">
+        <a id="createlydiagram" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Creately Diagram
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-insertmention-button" data-macro-name="insertmention-button" data-tooltip="Insert &#39;User mention&#39; macro">
+        <a id="insertmention-button" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ User mention
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-jiralink" data-macro-name="jiralink" data-tooltip="Insert &#39;JIRA Issue/Filter&#39; macro">
+        <a id="jiralink" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ JIRA Issue/Filter
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-info" data-macro-name="info" data-tooltip="Insert &#39;Info&#39; macro">
+        <a id="info" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Info
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-EasyMind" data-macro-name="EasyMind" data-tooltip="Insert &#39;EasyMind&#39; macro">
+        <a id="EasyMind" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ EasyMind
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-lucidchart" data-macro-name="lucidchart" data-tooltip="Insert &#39;Add Lucidchart Diagram&#39; macro">
+        <a id="lucidchart" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Add Lucidchart Diagram
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-drawio" data-macro-name="drawio" data-tooltip="Insert &#39;Draw.io diagram&#39; macro">
+        <a id="drawio" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Draw.io diagram
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-gliffy" data-macro-name="gliffy" data-tooltip="Insert &#39;Gliffy Diagram&#39; macro">
+        <a id="gliffy" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Gliffy Diagram
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-status" data-macro-name="status" data-tooltip="Insert &#39;Status&#39; macro">
+        <a id="status" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Status
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-mockup" data-macro-name="mockup" data-tooltip="Insert &#39;UI Mockup&#39; macro">
+        <a id="mockup" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ UI Mockup
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-gallery" data-macro-name="gallery" data-tooltip="Insert &#39;Gallery&#39; macro">
+        <a id="gallery" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Gallery
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-toc" data-macro-name="toc" data-tooltip="Insert &#39;Table of Contents&#39; macro">
+        <a id="toc" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Table of Contents
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-mathblock" data-macro-name="mathblock" data-tooltip="Insert &#39;LaTeX Math Block&#39; macro">
+        <a id="mathblock" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ LaTeX Math Block
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-mathinline" data-macro-name="mathinline" data-tooltip="Insert &#39;LaTeX Math Inline&#39; macro">
+        <a id="mathinline" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ LaTeX Math Inline
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-unit" data-macro-name="unit" data-tooltip="Insert &#39;LaTeX Unit&#39; macro">
+        <a id="unit" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ LaTeX Unit
+        </a>
+    </li>
+                                                                                                <li class="dropdown-item macro-calendar" data-macro-name="calendar" data-tooltip="Insert &#39;Team Calendar&#39; macro">
+        <a id="calendar" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Team Calendar
+        </a>
+    </li>
+                                                                                                                            
+        
+        <li class="dropdown-item content-macro" data-command="mceConfMacroBrowser" data-tooltip="Open the macro browser (Ctrl+Shift+A)">
+        <a id="rte-insert-macro" class="item-link" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#">
+                
+    
+    <span class="icon "></span>
+ Other macros
+        </a>
+    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                                <ul class="aui-buttons rte-toolbar-group-page-layouts-section-types">
+                    <li id="pagelayout-menu" class="toolbar-item toolbar-dropdown">
+                        <div class="aui-dd-parent">
+                            <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="toolbar-trigger aui-dd-trigger aui-button" id="rte-button-pagelayout" data-tooltip="Page layout">
+                                    
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-layout pagelayout-default">Page layout</span>
+                                    
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-dropdown "></span>
+                            </a>
+
+                            <ul id="pagelayout-menu-options" class="aui-dropdown hidden">
+                                <li class="dropdown-item" data-tooltip="No layout">
+    <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="item-link" data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-none&quot;, &quot;columns&quot;: 0   }">
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-check hidden"></span>
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-layout pagelayout-none">No layout</span>
+    </a>
+</li>
+                                <li class="dropdown-item" data-tooltip="Two column (simple)">
+    <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="item-link" data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-two-simple&quot;, &quot;columns&quot;: [&quot;&quot;, &quot;&quot;]   }">
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-check hidden"></span>
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-layout pagelayout-two-simple">Two column (simple)</span>
+    </a>
+</li>
+                                <li class="dropdown-item" data-tooltip="Two column (simple, left sidebar)">
+    <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="item-link" data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-two-simple-left&quot;, &quot;columns&quot;: [&quot;aside&quot;, &quot;large&quot;]   }">
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-check hidden"></span>
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-layout pagelayout-two-simple-left">Two column (simple, left sidebar)</span>
+    </a>
+</li>
+                                <li class="dropdown-item" data-tooltip="Two column (simple, right sidebar)">
+    <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="item-link" data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-two-simple-right&quot;, &quot;columns&quot;: [&quot;large&quot;, &quot;aside&quot;]   }">
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-check hidden"></span>
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-layout pagelayout-two-simple-right">Two column (simple, right sidebar)</span>
+    </a>
+</li>
+                                <li class="dropdown-item" data-tooltip="Three column (simple)">
+    <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="item-link" data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-three-simple&quot;, &quot;columns&quot;: [&quot;&quot;, &quot;&quot;, &quot;&quot;]   }">
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-check hidden"></span>
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-layout pagelayout-three-simple">Three column (simple)</span>
+    </a>
+</li>
+                                <li class="dropdown-item" data-tooltip="Two column">
+    <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="item-link" data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-two&quot;, &quot;columns&quot;: [&quot;&quot;, &quot;&quot;] , &quot;header&quot;: true  , &quot;footer&quot;:true  }">
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-check hidden"></span>
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-layout pagelayout-two">Two column</span>
+    </a>
+</li>
+                                <li class="dropdown-item" data-tooltip="Two column (left sidebar)">
+    <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="item-link" data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-two-left&quot;, &quot;columns&quot;: [&quot;aside&quot;, &quot;large&quot;] , &quot;header&quot;: true  , &quot;footer&quot;:true  }">
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-check hidden"></span>
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-layout pagelayout-two-left">Two column (left sidebar)</span>
+    </a>
+</li>
+                                <li class="dropdown-item" data-tooltip="Two column (right sidebar)">
+    <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="item-link" data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-two-right&quot;, &quot;columns&quot;: [&quot;large&quot;, &quot;aside&quot;] , &quot;header&quot;: true  , &quot;footer&quot;:true  }">
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-check hidden"></span>
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-layout pagelayout-two-right">Two column (right sidebar)</span>
+    </a>
+</li>
+                                <li class="dropdown-item" data-tooltip="Three column">
+    <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="item-link" data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-three&quot;, &quot;columns&quot;: [&quot;&quot;, &quot;&quot;, &quot;&quot;] , &quot;header&quot;: true  , &quot;footer&quot;:true  }">
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-check hidden"></span>
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-layout pagelayout-three">Three column</span>
+    </a>
+</li>
+                                <li class="dropdown-item" data-tooltip="Three column (left and right sidebars)">
+    <a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="item-link" data-atlassian-layout="{&quot;name&quot;: &quot;pagelayout-three-sidebars&quot;, &quot;columns&quot;: [&quot;sidebars&quot;, &quot;large&quot;, &quot;sidebars&quot;] , &quot;header&quot;: true  , &quot;footer&quot;:true  }">
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-check hidden"></span>
+            
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-layout pagelayout-three-sidebars">Three column (left and right sidebars)</span>
+    </a>
+</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                
+                                                
+                <ul class="aui-buttons rte-toolbar-group-undo">
+                    
+                <li class="toolbar-item aui-button" id="rte-button-undo" data-tooltip="Undo (Ctrl+Z)">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="undo">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-undo ">Undo</span>
+        </a>
+    </li>
+                    
+                <li class="toolbar-item aui-button" id="rte-button-redo" data-tooltip="Redo (Ctrl+Y)">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="redo">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-redo ">Redo</span>
+        </a>
+    </li>
+                </ul>
+            </div>                                                                                                <div id="draft-status" style="display:none"></div>
+                            <div class="aui-toolbar2-secondary">
+                <ul class="aui-buttons rte-toolbar-group-searchreplace">
+                        <li class="toolbar-item aui-button" id="rte-button-searchreplace" data-tooltip="Find/Replace">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="searchreplace">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-search ">Find/Replace</span>
+        </a>
+    </li>
+                </ul>
+                <ul class="aui-buttons rte-toolbar-group-help">
+                        <li class="toolbar-item aui-button" id="rte-button-help" data-tooltip="Help">
+        <a class="toolbar-trigger" href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" data-control-id="help">
+                
+    
+    <span class="icon aui-icon aui-icon-small aui-iconfont-editor-help ">Keyboard shortcuts help</span>
+        </a>
+    </li>
+                </ul>
+            </div>        </div>    </div>
+        
+        
+                                <div id="editor-notifications-container"><div id="all-messages"><div id="action-messages"></div></div></div><div id="editor-precursor"><div class="cell"><div class="aui-buttons aui-toolbar2"><button class="aui-button aui-button-subtle" type="button" data-tooltip="Labels" id="rte-button-labels" data-explicit-restrictions="" data-inherited-restrictions=""><span class="icon aui-icon aui-icon-small aui-iconfont-devtools-tag"></span></button><button class="aui-button aui-button-subtle" type="button" data-tooltip="Restrictions apply" id="rte-button-restrictions" data-explicit-restrictions="false" data-inherited-restrictions="true"><span class="icon aui-icon aui-icon-small aui-iconfont-unlocked icon-red"></span></button></div><div id="content-title-div" class=""><input type="text" name="title" id="content-title" tabindex="1" class="text pagetitle" autocomplete="off" value="리뷰 - Memory Networks" placeholder="Page title"></div></div></div>
+            
+    <div id="wysiwyg">
+        <div id="rte" class="cell editor-default ">
+            <textarea id="wysiwygTextarea" name="wysiwygContent" class="hidden tinymce-editor"></textarea>
+        </div>
+    </div>
+    <div id="editor-html-source-container" class="hidden">
+        <textarea id="editor-html-source" class="monospaceInput"></textarea>
+    </div>
+
+    <div id="preview">
+                        <div id="previewArea" class="cell">
+        </div>
+    </div>
+
+            <div id="savebar-container"><div id="rte-savebar" class="aui-toolbar aui-toolbar2"><div class="toolbar-split toolbar-split-row"><div class="toolbar-split toolbar-split-left"><div class="aui-buttons"></div></div><div class="toolbar-split toolbar-split-right"><div id="pluggable-status-container" class="toolbar-item rte-toolbar-pluggable-status"><div id="pluggable-status"></div></div><div class="aui-buttons" id="rte-savebar-tinymce-plugin-point"></div><div class="aui-buttons"><span id="rte-spinner" class="toolbar-item ">&nbsp;</span></div><div class="aui-buttons toolbar-group-edit assistive"><button id="rte-button-edit" class="aui-button" title="Return To edit Mode" type="button"><span class="trigger-text">Edit</span></button></div><div class="aui-buttons toolbar-group-preview"><button class="aui-button toolbar-item aui-button-light" id="rte-button-preview" title="Preview" type="button"><span class="trigger-text">Preview</span></button></div><div class="save-button-container"><button class="aui-button aui-button-primary" type="submit" id="rte-button-publish" name="confirm" value="Save" title="Save"><span class="trigger-text">Save</span></button></div><button class="toolbar-item-link aui-button aui-button-link" type="submit" id="rte-button-cancel" name="cancel" value="cancel">Close</button></div></div></div></div>
+    
+
+    
+</div>
+
+
+
+<script type="text/x-template" title="dynamic-editor-metadata" id="dynamic-editor-metadata-template">
+            <meta name="ajs-use-watch" content="false">
+            <meta name="ajs-attachment-source-content-id" content="18711389">
+            <meta name="ajs-use-inline-tasks" content="true">
+            <meta name="ajs-heartbeat" content="true">
+            <meta name="ajs-action-locale" content="en_US">
+            <meta name="ajs-editor-plugin-resource-prefix" content="/s/en_US/7201/3d89a43db3618502ceb73a83aa0af888aa0a285a/6.2.2/_">
+            <meta name="ajs-edit-mode" content="legacy">
+            <meta name="ajs-user-watching-own-content" content="true">
+            <meta name="ajs-new-page" content="false">
+            <meta name="ajs-editor-mode" content="richtext">
+            <meta name="ajs-auto-start" content="false">
+            <meta name="ajs-conf-revision" content="confluence$content$18711389.9">
+            <meta name="ajs-sync-revision-source" content="">
+            <meta name="ajs-draft-id" content="0">
+            <meta name="ajs-draft-share-id" content="">
+            <meta name="ajs-content-type" content="page">
+            <meta name="ajs-collaborative-editor-status" content="">
+            <meta name="ajs-existing-draft-id" content="0">
+            <meta name="ajs-content-id" content="18711389">
+            <meta name="ajs-form-name" content="inlinecommentform">
+            <meta name="ajs-can-attach-files" content="true">
+            <meta name="ajs-show-draft-message" content="false">
+            <meta name="ajs-shared-drafts" content="false">
+            <meta name="ajs-collaborative-content" content="false">
+            <meta name="ajs-min-editor-height" content="150">
+            <meta name="ajs-version-comment" content="">
+            <meta name="ajs-draft-type" content="page">
+                
+                <meta name="ajs-synchrony-token" content="">
+    <meta name="ajs-synchrony-base-url" content="">
+    <meta name="ajs-synchrony-app-id" content="">
+    <meta name="ajs-synchrony-expiry" content="">
+    <meta name="ajs-use-xhr-fallback" content="">
+
+            		    <meta name="ajs-max-thumb-width" content="300">
+		    <meta name="ajs-max-thumb-height" content="300">
+		    <meta name="ajs-can-send-email" content="true">
+		    <meta name="ajs-is-dev-mode" content="false">
+		    <meta name="ajs-draft-save-interval" content="30000">
+		    <meta name="ajs-show-hidden-user-macros" content="false">
+		    <meta name="ajs-is-admin" content="false">
+		    <meta name="ajs-confluence.prefs.editor.disable.autocomplete" content="false">
+		    <meta name="ajs-confluence.prefs.editor.disable.autoformat" content="false">
+		    <meta name="ajs-heartbeat-interval" content="30000">
+	
+    </script>
+
+<script type="text/x-template" title="tableForm" id="table-form-template">
+    <form id="tinymce-table-form" class="aui">
+        <div class="field-group">
+            <label for="rows">Rows</label>
+            <input id="rows" name="rows" type="text" size="3" autocomplete="off" value="{0}">
+        </div>
+        <div class="field-group">
+            <label for="cols">Columns</label>
+            <input id="cols" name="cols" type="text" size="3" autocomplete="off" value="{1}">
+        </div>
+        <div class="field-group hidden">
+            <input id="width" type="hidden" name="width" value="">
+            <label for="width">Width</label>
+        </div>
+        <div class="group">
+            <div class="checkbox">
+                <input id="table-heading-checkbox" class="checkbox" type="checkbox" name="heading" checked="checked" value="true">
+                <label for="table-heading-checkbox">First row is heading</label>
+            </div>
+        </div>
+        <div class="group hidden">
+            <div class="checkbox">
+                <input id="table-equal-width-columns-checkbox" class="checkbox" type="checkbox" name="equal-width-columns" value="false">
+                <label for="table-equal-width-columns-checkbox">Equal width columns</label>
+            </div>
+        </div>
+    </form>
+</script>
+<input type="hidden" name="draftId" value="0" id="draftId"><input type="hidden" name="originalVersion" value="2" id="originalVersion">
+<input type="hidden" name="syncRev" value="dummy-sync-rev" id="syncRev">    <input type="hidden" name="atl_token" value="e5bfe0f65ec59ca748f6f964555631187caaac70">
+</div><div class="aui-popup aui-dialog" style="margin-top: -325px; margin-left: -400px; width: 800px; height: 650px; z-index: 3002; display: none;"><div class="dialog-components"><ul class="dialog-page-menu" style="height: 599px; display: none;"><li class="page-menu-item selected"><button class="item-button">Panel</button></li></ul><div class="dialog-page-body"><div class="dialog-panel-body panel-body" style="height: 599px;"><form action="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="aui">    <div class="macro-desc" id="mathblock-ref-macro-desc">Inserts reference with link to the Math Block with the given anchor.</div>    <div class="macro-param-div field-group" id="mathblock-ref-page-div">      <label for="mathblock-ref-page-helper">Confluence page</label>      <input type="text" class="text autocomplete-page macro-param-input" id="mathblock-ref-page-helper" placeholder="This page" autocomplete="off" data-none-message="Not found" data-autocomplete-content-bound="true"><div class="aui-dd-parent autocomplete"></div>      <input type="text" class="hidden" id="mathblock-ref-page">      <div class="description">The page containing the math block (leave blank for this page).</div>    </div>    <div class="macro-param-div field-group required" id="mathblock-ref-anchor-div">      <label for="mathblock-ref-anchor">Anchor name<span class="aui-icon icon-required">required</span></label>      <input type="text" class="text macro-param-input" id="mathblock-ref-anchor" list="mathblock-ref-anchor-list" autocomplete="off"><datalist id="mathblock-ref-anchor-list"></datalist>      <div class="description">The anchor used for linking to the math block.</div>    </div>    <div class="macro-param-div field-group" id="mathblock-ref-displaytext-div">      <label for="mathblock-ref-displaytext">Link text</label>      <input type="text" class="text macro-param-input" id="mathblock-ref-displaytext" autocomplete="off">      <div class="description">Leave blank to use the number from the math block.</div>    </div>  </form><h4 id="mathblock-ref-preview-heading">Preview:</h4><div class="mathblock-ref-preview" id="mathblock-ref-preview"></div></div></div><div class="dialog-button-panel"><button class="button-panel-button button-panel-submit-button">Save</button><a href="http://confluence.exem-oss.org/pages/viewpage.action?pageId=18711389#" class="button-panel-link">Cancel</a></div></div></div><div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>

@@ -37,7 +37,25 @@ Machine Learning Study Warehouse
   - Seoha Song
 2. Faster RCNN
   - Donghun Kim
+
+### 2018WK13
+1. Deformable Convoluional Networks
+  - 임도형
+  
 ### 2018WK14
 1. Memory Networks
   - Seong-Hwan Hong
+  - 임도형
 2. Distributed Representations of Words and Phrases and their Compositionality
+
+### 2018WK16
+1. Learning to Learn without Grandient Descent by Grandient Descent
+  - 임도형
+
+### 2018WK17
+1. StarGAN, Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation
+ 	- Jeeae Myung, 
+ 	- 임도형
+2. Effective Approaches to Attention-based Neural Machine Translation
+ 	- SeongHwan-Hong
+ 	
