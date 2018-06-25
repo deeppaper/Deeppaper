@@ -1,6 +1,7 @@
 2018.06.17.
 
 Annotating Object Instances with a Polygon-RNN
+
 https://arxiv.org/abs/1704.05548
 
   - Sungwhan

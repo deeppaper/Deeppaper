@@ -16,7 +16,7 @@ Machine Learning Study Warehouse
   - Jaehwi Park
 3. Focal loss for dense object detection
   - Jiwon Jung
- 
+
 ### 2018WK01
 1. Bayesian optimization for automated model selection
   - Donghyun Kim
@@ -54,8 +54,9 @@ Machine Learning Study Warehouse
 
 ### 2018WK17
 1. StarGAN, Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation
- 	- Jeeae Myung, 
- 	- 임도형
+		- Jeeae Myung, 
+		- 임도형
 2. Effective Approaches to Attention-based Neural Machine Translation
- 	- SeongHwan-Hong
- 	
+		- SeongHwan-Hong
+		
+
