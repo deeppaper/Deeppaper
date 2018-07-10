@@ -54,9 +54,24 @@ Machine Learning Study Warehouse
 
 ### 2018WK17
 1. StarGAN, Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation
-		- Jeeae Myung, 
-		- 임도형
+	- Jeeae Myung, 
+	- 임도형
 2. Effective Approaches to Attention-based Neural Machine Translation
 		- SeongHwan-Hong
-		
+	
+### 2018WK22
+1. Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks (Cycle Gan)
+	- 임도형
+	
+### 2018WK25
+1. Annotating Object Instances with a Polygon-RNN
+	- Sungwhan
+	- 임도형
+
+2. Squeeze-and-Excitation Networks
+	- Jiae
+
+### 2018WK27
+1. Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour
+		- 임도형
 
