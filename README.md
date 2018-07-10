@@ -73,5 +73,5 @@ Machine Learning Study Warehouse
 
 ### 2018WK27
 1. Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour
-		- 임도형
+	- 임도형
 
