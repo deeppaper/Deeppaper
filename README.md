@@ -75,3 +75,11 @@ Machine Learning Study Warehouse
 1. Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour
 	- 임도형
 
+
+### 2019WK01
+1. World Models
+	- 정원모
+  - 정재윤
+2. A Style-Based Generator Architecture for Generative Adversarial Networks
+  - 정지원
+  - 주경돈
